@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = SudokuClient
+build_property.ProjectDir = C:\Sudoku\SudokuClient\
