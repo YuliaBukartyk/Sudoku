@@ -73,7 +73,7 @@
                  TextAlignment="Center"/>
         <!--<TextBlock HorizontalAlignment="Left" Margin="52,212,0,0" Text="Enter your password:" TextWrapping="Wrap" VerticalAlignment="Top"/>-->
         <!--<PasswordBox Width="120" Margin="348,212,332,214" VerticalAlignment="Top" Visibility="Visible"/>-->
-        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Log in" HorizontalAlignment="Center" Margin="0,263,0,0" VerticalAlignment="Top" Height="50" Width="100"
+        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding LogedToGameCommand}" Content="Log in" HorizontalAlignment="Center" Margin="0,263,0,0" VerticalAlignment="Top" Height="50" Width="100"
                 Background="#FF64CCF1"
                 Foreground="White"
                 FontFamily="Arial"
