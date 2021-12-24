@@ -13,36 +13,37 @@ namespace SudokuClient.ViewModels
         public ICommand BackToEntryCommand { get; }
         public ICommand SubmitCommand { get; }
 
-        public User user;
+        private User _user;
+        private string _username;
+        private string _password;
 
-        private string username;
         public string Username
         {
             get
             {
-                return username;
+                return _username;
             }
             set
             {
-                username = value;
+                _username = value;
                 OnPropertyChanged(nameof(Username));
-                user.Name = username;
+                _user.Name = _username;
 
             }
         }
 
-        private string password;
+        
         public string Password
         {
             get
             {
-                return password;
+                return _password;
             }
             set
             {
-                password = value;
+                _password = value;
                 OnPropertyChanged(nameof(Password));
-                user.Password = password;
+                _user.Password = _password;
 
             }
         }
@@ -50,9 +51,9 @@ namespace SudokuClient.ViewModels
 
         public RegisterViewModel(NavigationService EntryViewNavigationService)
         {
-            user = new User();
+            _user = new User();
             BackToEntryCommand = new NavigateCommand(EntryViewNavigationService);
-            SubmitCommand = new SubmitCommand(user);
+            SubmitCommand = new SubmitCommand(_user);
 
         }
     }
