@@ -9,17 +9,16 @@ namespace SudokuClient.Commands
 {
     public class SubmitCommand : CommandBase
     {
-        public User user;
+        private User _user;
         public SubmitCommand(User newUser)
         {
-            user = new User();
-            user = newUser;
+            _user = newUser;
         }
 
         public override void Execute(object parameter)
         {
             
-            string s = Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/adduser?name=" + user.Name.ToString());
+            Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/adduser?name=" + _user.Name.ToString());
 
             
         }
