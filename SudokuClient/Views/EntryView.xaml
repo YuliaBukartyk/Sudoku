@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SudokuClient.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="400" Background="Cyan">
+             d:DesignHeight="800" d:DesignWidth="450" Background="Cyan">
     <UserControl.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
