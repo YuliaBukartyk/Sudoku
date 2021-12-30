@@ -46,7 +46,7 @@ namespace SudokuClient
         }
         private LogInViewModel CreateLogInViewModel()
         {
-            return new LogInViewModel(new NavigationService(navigationStore, CreateEntryViewModel), new NavigationService(navigationStore, CreateGameLevelsViewModel));
+            return new LogInViewModel(new NavigationService(navigationStore, CreateEntryViewModel), new NavigationService(navigationStore, CreateMenuGameViewModel));
         }
 
         private RegisterViewModel CreateRegisterViewModel()
@@ -66,9 +66,13 @@ namespace SudokuClient
 
         private MenuGameViewModel CreateMenuGameViewModel()
         {
-            return new MenuGameViewModel();
+            return new MenuGameViewModel(new NavigationService(navigationStore, CreateGameLevelsViewModel), new NavigationService(navigationStore, CreateUserProfileViewModel));
         }
 
+        private UserProfileViewModel CreateUserProfileViewModel()
+        {
+            return new UserProfileViewModel();
+        }
 
     }
 }

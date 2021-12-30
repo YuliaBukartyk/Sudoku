@@ -16,10 +16,10 @@ namespace SudokuClient.ViewModels
         //private readonly User user;
 
 
-        public LogInViewModel(NavigationService EntryViewNavigationService, NavigationService GameLevelsViewNavigationService)
+        public LogInViewModel(NavigationService EntryViewNavigationService, NavigationService MenuGameViewNavigationService)
         {
             BackToEntryCommand = new NavigateCommand(EntryViewNavigationService);
-            LogedToGameCommand = new NavigateCommand(GameLevelsViewNavigationService);
+            LogedToGameCommand = new NavigateCommand(MenuGameViewNavigationService);
         }
 
 
