@@ -65,8 +65,8 @@
     </UserControl.Resources>
     <Grid>
         <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding EasyLevelGameCommand}" Content="Easy" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Width="104" Height="30"/>
-        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Medium" HorizontalAlignment="Center" VerticalAlignment="Top" Width="104" Height="30" Margin="0,173,0,0"/>
-        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Difficult" HorizontalAlignment="Center" VerticalAlignment="Top" Width="104" Height="30" Margin="0,236,0,0"/>
+        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Normal" HorizontalAlignment="Center" VerticalAlignment="Top" Width="104" Height="30" Margin="0,173,0,0"/>
+        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Hard" HorizontalAlignment="Center" VerticalAlignment="Top" Width="104" Height="30" Margin="0,236,0,0"/>
 
         <Button Style ="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToEntryCommand}" HorizontalAlignment="Left" Margin="28,22,0,0" VerticalAlignment="Top" Width="60" Height="60">
             <Image Source="/Images/arrow-back-icon-9.jpg" Stretch="Fill"/>

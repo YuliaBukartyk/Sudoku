@@ -68,12 +68,12 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="129*"/>
         </Grid.ColumnDefinitions>
-        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Register" Command="{Binding RegisterCommand}" HorizontalAlignment="Left" Margin="146,214,0,0" VerticalAlignment="Top" Width="103" Height="45" Grid.Column="1"
+        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Register" Command="{Binding RegisterCommand}" HorizontalAlignment="Left" Margin="154,0,0,0" VerticalAlignment="Center" Width="103" Height="46" Grid.Column="1"
                 Background="#FF64CCF1"
                 Foreground="White"
                 FontFamily="Arial"
                 FontSize="20"/>
-        <Button Style="{DynamicResource RoundedButtonStyle}" Content="LogIn" Command="{Binding LogInCommand}" HorizontalAlignment="Left" Margin="145,137,0,0" VerticalAlignment="Top" Width="104" Height="46" Grid.Column="1"
+        <Button Style="{DynamicResource RoundedButtonStyle}" Content="LogIn" Command="{Binding LogInCommand}" HorizontalAlignment="Left" Margin="156,282,0,0" VerticalAlignment="Top" Width="104" Height="46" Grid.Column="1"
                 Background="#FF64CCF1"
                 Foreground="White"
                 FontFamily="Arial"
