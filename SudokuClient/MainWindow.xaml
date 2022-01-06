@@ -28,6 +28,14 @@
                 <views:EasyLevelGameView />
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type vms:NormalLevelGameViewModel}">
+                <views:NormalLevelGameView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vms:HardLevelGameViewModel}">
+                <views:HardLevelGameView />
+            </DataTemplate>
+            
             <DataTemplate DataType="{x:Type vms:MenuGameViewModel}">
                 <views:MenuGameView />
             </DataTemplate>
@@ -35,6 +43,7 @@
             <DataTemplate DataType="{x:Type vms:UserProfileViewModel}">
                 <views:UserProfileView />
             </DataTemplate>
+
             
         </Grid.Resources>
 

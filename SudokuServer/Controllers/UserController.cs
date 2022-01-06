@@ -26,5 +26,7 @@ namespace SudokuServer.Controllers
                 return _context.Users.ToList();
             }
         }
+
+
     }
 }

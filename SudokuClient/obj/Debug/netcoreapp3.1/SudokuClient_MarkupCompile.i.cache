@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\App.xaml
-8537270699
+101695977173
 
-301896253382
+34-1972038984
 192-1533232326
-MainWindow.xaml;Views\EasyLevelGameView.xaml;Views\EntryView.xaml;Views\GameLevelsView.xaml;Views\LogInView.xaml;Views\MenuGameView.xaml;Views\RegisterView.xaml;Views\UserProfileView.xaml;
+MainWindow.xaml;Views\EasyLevelGameView.xaml;Views\EntryView.xaml;Views\GameLevelsView.xaml;Views\HardLevelGameView.xaml;Views\LogInView.xaml;Views\MenuGameView.xaml;Views\NormalLevelGameView.xaml;Views\RegisterView.xaml;Views\UserProfileView.xaml;
 
 True
 
