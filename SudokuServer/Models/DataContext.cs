@@ -11,6 +11,8 @@ namespace SudokuServer.Models
     {
         public DbSet<User> Users { get; set; }
 
+        public DbSet<Game> Games { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-NE5SC99\SQLEXPRESS01;Initial Catalog=SudokuDB;Integrated Security=True");

@@ -66,13 +66,13 @@
     </UserControl.Resources>
     <Border BorderThickness="1" BorderBrush="Black">
 
-        <Grid Height="400" Width="400" Margin="-1,77,-1,221" >
+        <Grid Width="400" Margin="24,0,24,230" Height="400" VerticalAlignment="Bottom" >
 
 
             <Grid.ColumnDefinitions >
                 <ColumnDefinition>
                 </ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="133.333"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
 
             </Grid.ColumnDefinitions>
@@ -112,7 +112,7 @@
                 <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
 
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
-                
+
             </Grid>
 
             <Grid Grid.Row="0" Grid.Column="1">
@@ -314,17 +314,18 @@
 
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
             </Grid>
-            <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToMenuCommand}" Content="Back" HorizontalAlignment="Left" Margin="13,-64,0,0" VerticalAlignment="Top" Height="37" Width="69"
+            <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToMenuCommand}" Content="Back" HorizontalAlignment="Left" Margin="13,-134,0,0" VerticalAlignment="Top" Height="37" Width="69"
             Background="CadetBlue"
             Foreground="White"
             FontFamily="Arial"
             FontSize="20" RenderTransformOrigin="0.039,0.297"/>
-            <Label Content="Easy" HorizontalAlignment="Center" Margin="0,-111,0,0" VerticalAlignment="Top" Grid.Column="1" 
+            <Label Content="Easy" HorizontalAlignment="Left" Margin="37,-89,0,0" VerticalAlignment="Top" Grid.Column="1" 
                    FontFamily="Arial"
                    FontSize="20"
                    FontStretch="UltraExpanded"
                    Foreground="CadetBlue"
                    FontWeight="Bold"/>
+
 
 
         </Grid>

@@ -56,12 +56,23 @@ namespace SudokuClient
 
         private GameLevelsViewModel CreateGameLevelsViewModel()
         {
-            return new GameLevelsViewModel(new NavigationService(navigationStore, CreateEasyLevelGameViewModel), new NavigationService(navigationStore, CreateEntryViewModel));
+            return new GameLevelsViewModel(new NavigationService(navigationStore, CreateEasyLevelGameViewModel), new NavigationService(navigationStore, CreateNormalLevelGameViewModel),
+                new NavigationService(navigationStore, CreateHardLevelGameViewModel), new NavigationService(navigationStore, CreateEntryViewModel));
         }
 
         private EasyLevelGameViewModel CreateEasyLevelGameViewModel()
         {
             return new EasyLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel));
+        }
+
+        private NormalLevelGameViewModel CreateNormalLevelGameViewModel()
+        {
+            return new NormalLevelGameViewModel();
+        }
+
+        private HardLevelGameViewModel CreateHardLevelGameViewModel()
+        {
+            return new HardLevelGameViewModel();
         }
 
         private MenuGameViewModel CreateMenuGameViewModel()
