@@ -13,7 +13,7 @@ namespace SudokuClient.ViewModels
         public ICommand BackToEntryCommand { get; }
         public ICommand SubmitCommand { get; }
 
-        private User _user;
+        private readonly User _user;
         private string _username;
         private string _password;
 
