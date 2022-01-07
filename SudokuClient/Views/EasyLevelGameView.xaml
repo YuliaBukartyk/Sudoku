@@ -319,12 +319,28 @@
             Foreground="White"
             FontFamily="Arial"
             FontSize="20" RenderTransformOrigin="0.039,0.297"/>
-            <Label Content="Easy" HorizontalAlignment="Left" Margin="37,-89,0,0" VerticalAlignment="Top" Grid.Column="1" 
+
+            <Label Content="Easy" HorizontalAlignment="Left" Margin="37,-84,0,0" VerticalAlignment="Top" Grid.Column="1" 
                    FontFamily="Arial"
                    FontSize="20"
                    FontStretch="UltraExpanded"
                    Foreground="CadetBlue"
                    FontWeight="Bold"/>
+
+            <Label Content="{Binding TimerText}" HorizontalAlignment="Left" Margin="23,-131,0,0" VerticalAlignment="Top" Grid.Column="2" 
+                FontFamily="Arial"
+                FontSize="20"
+                FontStretch="UltraExpanded"
+                Foreground="CadetBlue"
+                FontWeight="Bold"/>
+            
+            <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToMenuCommand}" Content="Save" HorizontalAlignment="Left" Margin="13,-82,0,0" VerticalAlignment="Top" Height="37" Width="69"
+                Background="CadetBlue"
+                Foreground="White"
+                FontFamily="Arial"
+                FontSize="20" RenderTransformOrigin="0.039,0.297"/>
+
+
 
 
 

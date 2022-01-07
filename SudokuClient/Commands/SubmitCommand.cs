@@ -9,7 +9,7 @@ namespace SudokuClient.Commands
 {
     public class SubmitCommand : CommandBase
     {
-        private User _user;
+        private readonly User _user;
         public SubmitCommand(User newUser)
         {
             _user = newUser;
