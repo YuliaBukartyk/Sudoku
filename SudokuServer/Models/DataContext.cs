@@ -15,7 +15,7 @@ namespace SudokuServer.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-NE5SC99\SQLEXPRESS01;Initial Catalog=SudokuDB;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"Data Source=YROTBER-MOBL;Initial Catalog=SudokuDB;Integrated Security=True");
         }
     }
 }

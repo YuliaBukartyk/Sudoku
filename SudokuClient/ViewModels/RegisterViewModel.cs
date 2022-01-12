@@ -16,6 +16,7 @@ namespace SudokuClient.ViewModels
         private readonly User _user;
         private string _username;
         private string _password;
+        private string _verificationPassword;
 
         public string Username
         {
@@ -45,6 +46,22 @@ namespace SudokuClient.ViewModels
                 OnPropertyChanged(nameof(Password));
                 _user.Password = _password;
 
+            }
+        }
+
+
+        public string VerificationPassword
+        {
+            get
+            {
+                return _verificationPassword;
+            }
+            set
+            {
+                _verificationPassword = value;
+                OnPropertyChanged(nameof(VerificationPassword));
+                _user.VerificationPassword = _verificationPassword;
+                
             }
         }
 

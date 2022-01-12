@@ -15,7 +15,7 @@ namespace SudokuClient.Commands
 
         public override void Execute(object parameter)
         {
-
+            var x = 1;
            Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/adduser?name=" + _game.Duraion);
 
 

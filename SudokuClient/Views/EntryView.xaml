@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SudokuClient.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="800" d:DesignWidth="450" Background="Cyan">
+             d:DesignHeight="800" d:DesignWidth="450" Background="White">
     <UserControl.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -68,16 +68,19 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="129*"/>
         </Grid.ColumnDefinitions>
-        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Register" Command="{Binding RegisterCommand}" HorizontalAlignment="Left" Margin="154,0,0,0" VerticalAlignment="Center" Width="103" Height="46" Grid.Column="1"
+        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Register" Command="{Binding RegisterCommand}" HorizontalAlignment="Left" Margin="160,534,0,0" VerticalAlignment="Top" Width="103" Height="46" Grid.Column="1"
                 Background="#FF64CCF1"
                 Foreground="White"
                 FontFamily="Arial"
                 FontSize="20"/>
-        <Button Style="{DynamicResource RoundedButtonStyle}" Content="LogIn" Command="{Binding LogInCommand}" HorizontalAlignment="Left" Margin="156,282,0,0" VerticalAlignment="Top" Width="104" Height="46" Grid.Column="1"
+        <Button Style="{DynamicResource RoundedButtonStyle}" Content="LogIn" Command="{Binding LogInCommand}" HorizontalAlignment="Left" Margin="160,456,0,0" VerticalAlignment="Top" Width="104" Height="46" Grid.Column="1"
                 Background="#FF64CCF1"
                 Foreground="White"
                 FontFamily="Arial"
                 FontSize="20"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="196" Margin="105,166,0,0" VerticalAlignment="Top" Width="224" Source="/Images/sudokuLogo.PNG" Stretch="Fill" Visibility="Visible">
+
+        </Image>
 
         <!--<TextBlock HorizontalAlignment="Left" Margin="133,108,0,0" Text="Welcome to Sudoku game" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Grid.Column="1"/>-->
 

@@ -333,8 +333,8 @@
                 FontStretch="UltraExpanded"
                 Foreground="CadetBlue"
                 FontWeight="Bold"/>
-            
-            <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToMenuCommand}" Content="Save" HorizontalAlignment="Left" Margin="13,-82,0,0" VerticalAlignment="Top" Height="37" Width="69"
+
+            <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding SaveTheGameCommand}" Content="Save" HorizontalAlignment="Left" Margin="13,-82,0,0" VerticalAlignment="Top" Height="37" Width="69"
                 Background="CadetBlue"
                 Foreground="White"
                 FontFamily="Arial"
