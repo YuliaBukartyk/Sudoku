@@ -64,28 +64,41 @@
         </Style>
     </UserControl.Resources>
     <Grid RenderTransformOrigin="0.311,0.175">
-        <TextBox HorizontalAlignment="Center" Margin="0,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38" Text="{Binding Username}"
+        <TextBox HorizontalAlignment="Center" Margin="0,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38" Text="{Binding Username}"
                  FontSize="26"
                  BorderBrush="{x:Null}"
                  Background="#FFF6F6F6"
                  Foreground="DarkGray"
                  TextAlignment="Center"/>
-        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38" Text="{Binding Password}"
+        <PasswordBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="214" Height="38"
             FontSize="26"
             BorderBrush="{x:Null}"
             Background="#FFF6F6F6"
             Foreground="DarkGray"
-            TextAlignment="Center" Margin="0,173,0,0"/>
-        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38" Text="Verify Password"
+            Margin="0,256,0,0"/>
+        <PasswordBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="214" Height="38" 
             FontSize="26"
             BorderBrush="{x:Null}"
             Background="#FFF6F6F6"
             Foreground="DarkGray"
-            TextAlignment="Center" Margin="0,234,0,0"/>
+            Margin="0,358,0,0"/>
+
+        <!--<TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38" Text="{Binding Password}"
+            FontSize="26"
+            BorderBrush="{x:Null}"
+            Background="#FFF6F6F6"
+            Foreground="DarkGray"
+            TextAlignment="Center" Margin="0,256,0,0"/>
+        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38" Text="{Binding VerificationPassword}"
+            FontSize="26"
+            BorderBrush="{x:Null}"
+            Background="#FFF6F6F6"
+            Foreground="DarkGray"
+            TextAlignment="Center" Margin="0,358,0,0"/>-->
 
 
 
-        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding SubmitCommand}" Content="Submit" HorizontalAlignment="Left" Margin="148,311,0,0" VerticalAlignment="Top" Height="31" Width="95"
+        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding SubmitCommand}" Content="Submit" HorizontalAlignment="Left" Margin="164,480,0,0" VerticalAlignment="Top" Height="31" Width="95"
             Background="#FF64CCF1"
             Foreground="White"
             FontFamily="Arial"
