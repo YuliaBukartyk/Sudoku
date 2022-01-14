@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SudokuClient.Views"
+             xmlns:local="clr-namespace:SudokuClient.Views" xmlns:components="clr-namespace:SudokuClient.Components" 
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="450" Background="white">
     <UserControl.Resources>
@@ -70,33 +70,20 @@
                  Background="#FFF6F6F6"
                  Foreground="DarkGray"
                  TextAlignment="Center"/>
-        <PasswordBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="214" Height="38"
+        <components:BindablePasswordBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="214" Height="38" 
+            Password="{Binding Password, Mode=TwoWay}"                            
             FontSize="26"
             BorderBrush="{x:Null}"
             Background="#FFF6F6F6"
             Foreground="DarkGray"
             Margin="0,256,0,0"/>
-        <PasswordBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="214" Height="38" 
+        <components:BindablePasswordBox HorizontalAlignment="Center" VerticalAlignment="Top" Width="214" Height="38" 
+            Password="{Binding VerificationPassword, Mode=TwoWay}"
             FontSize="26"
             BorderBrush="{x:Null}"
             Background="#FFF6F6F6"
             Foreground="DarkGray"
             Margin="0,358,0,0"/>
-
-        <!--<TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38" Text="{Binding Password}"
-            FontSize="26"
-            BorderBrush="{x:Null}"
-            Background="#FFF6F6F6"
-            Foreground="DarkGray"
-            TextAlignment="Center" Margin="0,256,0,0"/>
-        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38" Text="{Binding VerificationPassword}"
-            FontSize="26"
-            BorderBrush="{x:Null}"
-            Background="#FFF6F6F6"
-            Foreground="DarkGray"
-            TextAlignment="Center" Margin="0,358,0,0"/>-->
-
-
 
         <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding SubmitCommand}" Content="Submit" HorizontalAlignment="Left" Margin="164,480,0,0" VerticalAlignment="Top" Height="31" Width="95"
             Background="#FF64CCF1"
