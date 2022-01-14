@@ -97,3 +97,5 @@ C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuCli
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\HardLevelGameView.baml
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\NormalLevelGameView.baml
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.csproj.AssemblyReference.cache
+C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Components\BindablePasswordBox.g.cs
+C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Components\BindablePasswordBox.baml

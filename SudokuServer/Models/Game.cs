@@ -11,7 +11,6 @@ namespace SudokuServer.Models
     {
             [Key]
             public int Id { get; set; }
-
             public int duration { get; set; }
             public string level { get; set; }
 

@@ -23,6 +23,9 @@ namespace SudokuServer.Controllers
                 _context.Users.Add(user);
                 _context.SaveChanges();
 
+
+
+
                 return _context.Users.ToList();
             }
         }
