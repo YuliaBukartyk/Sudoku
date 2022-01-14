@@ -16,5 +16,7 @@ namespace SudokuServer.Models
         public string name { get; set; }
 
         public string password { get; set; }
+
+
     }
 }

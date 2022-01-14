@@ -32,14 +32,12 @@ namespace SudokuClient.Commands
         }
 
 
-
         private bool VerifyPassword()
         {
             if (_user.Password.Equals(_user.VerificationPassword))
             {
                 return true;
             }
-
             else
             {
                 return false;
