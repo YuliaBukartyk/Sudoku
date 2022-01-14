@@ -4,6 +4,7 @@ using SudokuClient.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows;
 using System.Windows.Input;
 
 namespace SudokuClient.ViewModels
@@ -72,6 +73,7 @@ namespace SudokuClient.ViewModels
             BackToEntryCommand = new NavigateCommand(EntryViewNavigationService);
             SubmitCommand = new SubmitCommand(_user);
 
+            
         }
     }
 }
