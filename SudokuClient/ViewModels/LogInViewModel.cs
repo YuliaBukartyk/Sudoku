@@ -13,7 +13,21 @@ namespace SudokuClient.ViewModels
         public ICommand BackToEntryCommand { get; }
         public ICommand LogedToGameCommand { get; }
 
-        //private readonly User user;
+        private string _password;
+
+        public string Password
+        {
+            get
+            {
+                return _password;
+            }
+            set
+            {
+                _password = value;
+                OnPropertyChanged(nameof(Password));
+
+            }
+        }
 
 
         public LogInViewModel(NavigationService EntryViewNavigationService, NavigationService MenuGameViewNavigationService)

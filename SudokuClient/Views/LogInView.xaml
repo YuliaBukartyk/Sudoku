@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SudokuClient.Views"
+             xmlns:local="clr-namespace:SudokuClient.Views" xmlns:components="clr-namespace:SudokuClient.Components"
              mc:Ignorable="d" 
-             d:DesignHeight="800" d:DesignWidth="450" Background="Beige">
+             d:DesignHeight="800" d:DesignWidth="450" Background="White">
     <UserControl.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -64,33 +64,40 @@
         </Style>
     </UserControl.Resources>
     <Grid>
-        <!--<TextBlock HorizontalAlignment="Left" Margin="52,173,0,0" Text="Enter your name:" TextWrapping="Wrap" VerticalAlignment="Top"/>-->
-        <TextBox HorizontalAlignment="Center" Margin="0,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38" Text="UserName"
+
+        <TextBox HorizontalAlignment="Center" Margin="0,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38"
                  FontSize="26"
-                 BorderBrush="{x:Null}"
+                 BorderBrush="#FF64CCF1"
                  Background="#FFF6F6F6"
-                 Foreground="DarkGray"
-                 TextAlignment="Center"/>
-        <!--<TextBlock HorizontalAlignment="Left" Margin="52,212,0,0" Text="Enter your password:" TextWrapping="Wrap" VerticalAlignment="Top"/>-->
-        <!--<PasswordBox Width="120" Margin="348,212,332,214" VerticalAlignment="Top" Visibility="Visible"/>-->
+                 Foreground="DarkGray"/>
+
         <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding LogedToGameCommand}" Content="Log in" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="100"
                 Background="#FF64CCF1"
                 Foreground="White"
                 FontFamily="Arial"
-                FontSize="20" Margin="0,400,0,0"/>
-        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="38" Text="Password"
-            FontSize="26"
-            BorderBrush="{x:Null}"
-            Background="#FFF6F6F6"
-            Foreground="DarkGray"
-            TextAlignment="Center" Margin="0,296,0,0"/>
+                FontSize="20" Margin="0,416,0,0"/>
+
+        <components:BindablePasswordBox HorizontalAlignment="Center"  VerticalAlignment="Top" Width="214" Height="38"
+            Password="{Binding Password, Mode=TwoWay}" 
+            Margin="0,306,0,0"/>
+
+
         <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToEntryCommand}" Content="Back" HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Height="37" Width="69"
-            Background="Red"
+            Background="DarkTurquoise"
             Foreground="White"
             FontFamily="Arial"
             FontSize="20"/>
 
-
+        <TextBlock HorizontalAlignment="Left" Margin="118,187,0,0" Text="Enter your name: " TextWrapping="Wrap" VerticalAlignment="Top"
+                   FontFamily="Arial"
+                   FontSize="15"
+                   Foreground="DarkGray"
+                   />
+        <TextBlock HorizontalAlignment="Left" Margin="118,284,0,0" Text="Enter your password: " TextWrapping="Wrap" VerticalAlignment="Top"
+            FontFamily="Arial"
+            FontSize="15"
+            Foreground="DarkGray"
+                   />
 
     </Grid>
 </UserControl>
