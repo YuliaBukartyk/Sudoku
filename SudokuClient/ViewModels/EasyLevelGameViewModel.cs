@@ -23,6 +23,8 @@ namespace SudokuClient.ViewModels
 
         private readonly Game _game;
 
+        public char[] array;
+
         public string TimerText
         {
             get
@@ -36,11 +38,40 @@ namespace SudokuClient.ViewModels
             }
         }
 
+        public char[] Array
+        {
+            get
+            {
+                return array;
+            }
+            set
+            {
+                this.array = value;
+                OnPropertyChanged(nameof(Array));
+            }
+        }
 
 
         public EasyLevelGameViewModel(NavigationService MenuViewNavigationService)
         {
             _game = new Game();
+            
+            string sudokustring = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?");
+            array = new char[sudokustring.Length];
+
+            for (int i = 0; i < sudokustring.Length; i++)
+            {
+                if (sudokustring[i] == '0')
+                {
+                    array[i] = '\0';
+                }
+                else
+                {
+                    array[i] = sudokustring[i];
+                }
+                
+            }
+            
             BackToMenuCommand = new NavigateCommand(MenuViewNavigationService);
             SaveTheGameCommand = new SaveTheGameCommand(_game);
             dispatcherTimer = new DispatcherTimer();
