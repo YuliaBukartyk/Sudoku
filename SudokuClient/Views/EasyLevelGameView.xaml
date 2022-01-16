@@ -101,16 +101,35 @@
                 </Grid.RowDefinitions>
 
 
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1" TextAlignment="Center" ></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
+                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1" 
+                         TextAlignment="Center" 
+                         Text="{Binding Array[0]}" />
+                
+                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[1]}" />
 
+                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[2]}" />
+
+                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[3]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[4]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[5]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[6]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[7]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[8]}" />
+                         
+                         
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
 
             </Grid>
@@ -127,15 +146,33 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
+                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[9]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[10]}" />
+                      
+                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[11]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[12]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[13]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[14]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[15]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[16]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[17]}" />
+                         
 
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
             </Grid>
@@ -152,15 +189,33 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
+                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[18]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[19]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[20]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[21]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[22]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[23]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[24]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[25]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[26]}" />
+                         
 
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
             </Grid>
@@ -177,15 +232,33 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
+                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[27]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[28]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[29]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[30]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[31]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[32]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[33]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[34]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[35]}" />
+                         
 
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
             </Grid>
@@ -202,15 +275,33 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
+                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[36]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[37]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[38]}" />
+                        
+                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[39]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[40]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[41]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[42]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[43]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[44]}" />
+                         
 
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
             </Grid>
@@ -227,15 +318,32 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
+                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[45]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[46]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[47]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[48]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[49]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[50]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[51]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[52]}" />
+
+                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[53]}" />
 
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
             </Grid>
@@ -252,15 +360,32 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
+                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[54]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[55]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[56]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[57]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[58]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[59]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[60]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[61]}" />
+
+                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[62]}" />
 
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
             </Grid>
@@ -277,15 +402,32 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
+                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[63]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[64]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[65]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[66]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[67]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[68]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[69]}" />
+                        
+                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[70]}" />
+
+                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[71]}" />
 
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
             </Grid>
@@ -302,15 +444,32 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"></TextBox>
+                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[72]}" />
+                         
+                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[73]}" />
+                        
+                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[74]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[75]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[76]}" />
+                         
+                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[77]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[78]}" />
+                         
+                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[79]}" />
+
+                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="CadetBlue" BorderThickness="1"
+                         Text="{Binding Array[80]}" />
 
                 <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="CadetBlue" BorderThickness="3"/>
             </Grid>
