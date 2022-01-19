@@ -6,6 +6,7 @@ using System.Text;
 using System.Windows.Input;
 using System.Windows.Threading;
 using SudokuClient.Models;
+using System.Collections.ObjectModel;
 
 namespace SudokuClient.ViewModels
 {
@@ -23,7 +24,8 @@ namespace SudokuClient.ViewModels
 
         private readonly Game _game;
 
-        public char[] array;
+        public Cell[] Cells { get; }
+
 
         public string TimerText
         {
@@ -38,46 +40,55 @@ namespace SudokuClient.ViewModels
             }
         }
 
-        public char[] Array
-        {
-            get
-            {
-                return array;
-            }
-            set
-            {
-                this.array = value;
-                OnPropertyChanged(nameof(Array));
-            }
-        }
 
 
         public EasyLevelGameViewModel(NavigationService MenuViewNavigationService)
         {
             _game = new Game();
-            
-            string sudokustring = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?");
-            array = new char[sudokustring.Length];
+            string sudokuString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?");
+            string sudokuStringPlayer = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?");
+            Cells = new Cell[sudokuStringPlayer.Length];
 
-            for (int i = 0; i < sudokustring.Length; i++)
+
+            for (int i = 0; i < sudokuStringPlayer.Length; i++)
             {
-                if (sudokustring[i] == '0')
+                Cells[i] = new Cell();
+
+                if (sudokuStringPlayer[i] == '0')
                 {
-                    array[i] = '\0';
+                    Cells[i].CellValue = string.Empty;
                 }
                 else
                 {
-                    array[i] = sudokustring[i];
+                    Cells[i].CellValue = sudokuStringPlayer[i].ToString();
                 }
-                
+
             }
-            
+            //CheckIfValid(sudokuString);
+
             BackToMenuCommand = new NavigateCommand(MenuViewNavigationService);
             SaveTheGameCommand = new SaveTheGameCommand(_game);
             dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += new EventHandler(DispatcherTimerTick);
             dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
             dispatcherTimer.Start();
+        }
+
+        private void CheckIfValid(string sudokuString)
+        {
+            for (int i = 0; i < sudokuString.Length; i++)
+            {
+                if (Cells[i].CellValue.Equals(sudokuString[i].ToString()))
+                {
+                    Cells[i].IsValid = true;
+                }
+
+                else
+                {
+                    Cells[i].IsValid = false;
+                }
+            }
+
         }
 
         private void DispatcherTimerTick(object sender, EventArgs e)
