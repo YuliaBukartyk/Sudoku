@@ -16,6 +16,8 @@ namespace SudokuClient.Models
 
         private string _cellValue;
         private bool _isValid = true;
+        private string _originalValue;
+        
         public string CellValue
         {
             get
@@ -25,7 +27,29 @@ namespace SudokuClient.Models
             set
             {
                 _cellValue = value;
+                
+                if (!CellValue.Equals(string.Empty) && !CellValue.Equals(OriginalValue))
+                {
+                    IsValid = false;
+                }
+                else
+                {
+                    IsValid = true;
+                }
                 OnPropertyChanged(nameof(CellValue));
+            }
+        }
+
+        public string OriginalValue
+        {
+            get
+            {
+                return _originalValue;
+            }
+            set
+            {
+                _originalValue = value;
+                OnPropertyChanged(nameof(OriginalValue));
             }
         }
 
