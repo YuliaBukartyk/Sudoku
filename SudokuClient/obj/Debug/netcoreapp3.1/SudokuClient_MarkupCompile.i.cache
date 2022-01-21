@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\
+C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\
 SudokuClient
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\valen\Desktop\Sudoku\SudokuClient\App.xaml
+C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\App.xaml
 11-107490435
 
-39-757637250
+41-527566423
 192-1533232326
 Components\BindablePasswordBox.xaml;MainWindow.xaml;Views\EasyLevelGameView.xaml;Views\EntryView.xaml;Views\GameLevelsView.xaml;Views\HardLevelGameView.xaml;Views\LogInView.xaml;Views\MenuGameView.xaml;Views\NormalLevelGameView.xaml;Views\RegisterView.xaml;Views\UserProfileView.xaml;
 
-False
+True
 

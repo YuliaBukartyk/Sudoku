@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
-    "\\Migrations",
     "\\Models"
   ],
+  "SelectedNode": "\\SudokuServer.sln",
   "PreviewInSolutionExplorer": false
 }
