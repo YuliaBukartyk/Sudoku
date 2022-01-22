@@ -64,1581 +64,1450 @@
         </Style>
 
     </UserControl.Resources>
-    
-    <Border BorderThickness="1" BorderBrush="Black">
 
-        <Grid Width="380" Margin="20,0,20,220" Height="380" VerticalAlignment="Bottom" >
+    <Grid Width="380" Margin="20,0,20,220" Height="380" VerticalAlignment="Bottom" >
 
 
-            <Grid.ColumnDefinitions >
-                <ColumnDefinition>
-                </ColumnDefinition>
-                <ColumnDefinition Width="133.333"></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
 
-            <Border Grid.Column="0" Grid.RowSpan="2"  BorderBrush="#FF64CCF1" BorderThickness="10" Padding="15" />
-
-
-            <Grid  Grid.Row="0" Grid.Column="0" >
-
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-
-
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1" 
+        <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1" 
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"                       
                          Text="{Binding Cells[0].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[0].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[0].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
 
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"                       
+        <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"                       
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[1].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                    <Style TargetType="{x:Type TextBox}">
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding Cells[1].IsValid}" Value="False">
-                                <Setter Property="Foreground" Value="Red" />
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[1].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[2].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[2].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[2].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
 
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="0" Grid.Column="3" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[3].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[3].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[3].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="0" Grid.Column="4" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[4].CellValue, UpdateSourceTrigger=PropertyChanged}">
 
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[4].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[4].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="0" Grid.Column="5" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[5].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[5].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[5].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="0" Grid.Column="6" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[6].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[6].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[6].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="0" Grid.Column="7" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[7].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[7].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[7].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="0" Grid.Column="8" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[8].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[8].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
-                         
-                         
-                <Border  Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="#FF64CCF1" BorderThickness="3"/>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[8].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-            </Grid>
-
-            <Grid Grid.Row="0" Grid.Column="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[9].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[9].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[9].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[10].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[10].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[10].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[11].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[11].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[11].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="1" Grid.Column="3" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[12].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[12].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[12].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="1" Grid.Column="4" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[13].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[13].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[13].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="1" Grid.Column="5" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[14].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[14].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[14].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="1" Grid.Column="6" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[15].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[15].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[15].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="1" Grid.Column="7" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[16].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[16].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[16].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="1" Grid.Column="8" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[17].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[17].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
-                         
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[17].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="#FF64CCF1" BorderThickness="3"/>
-            </Grid>
-
-            <Grid Grid.Row="0" Grid.Column="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[18].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[18].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[18].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[19].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[19].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[19].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[20].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[20].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
-                         
-                         
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[20].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+
+        <TextBox Grid.Row="2" Grid.Column="3" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[21].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[21].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[21].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="2" Grid.Column="4" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[22].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[22].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[22].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="2" Grid.Column="5" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[23].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[23].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[23].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="2" Grid.Column="6" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[24].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[24].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[24].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="2" Grid.Column="7" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[25].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[25].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[25].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="2" Grid.Column="8" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[26].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[26].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
-                         
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[26].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="#FF64CCF1" BorderThickness="3"/>
-            </Grid>
-
-            <Grid Grid.Row="1" Grid.Column="0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="3" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[27].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[27].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[27].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="3" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[28].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[28].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[28].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="3" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[29].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[29].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[29].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="3" Grid.Column="3" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[30].CellValue, UpdateSourceTrigger=PropertyChanged}">
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[30].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[30].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="3" Grid.Column="4" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[31].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[31].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[31].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="3" Grid.Column="5" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[32].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[32].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[32].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="3" Grid.Column="6" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[33].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[33].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[33].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="3" Grid.Column="7" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[34].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[34].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[34].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="3" Grid.Column="8" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[35].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[35].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
-                         
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[35].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="#FF64CCF1" BorderThickness="3"/>
-            </Grid>
-
-            <Grid Grid.Row="1" Grid.Column="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="4" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[36].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[36].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[36].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="4" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[37].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[37].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[37].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="4" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[38].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[38].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[38].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="4" Grid.Column="3" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[39].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[39].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[39].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="4" Grid.Column="4" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[40].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[40].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[40].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="4" Grid.Column="5" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[41].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[41].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[41].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="4" Grid.Column="6" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[42].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[42].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[42].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="4" Grid.Column="7" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[43].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[43].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[43].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="4" Grid.Column="8" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[44].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[44].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
-                         
-                         
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[44].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="#FF64CCF1" BorderThickness="3"/>
-            </Grid>
-
-            <Grid Grid.Row="1" Grid.Column="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="5" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[45].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[45].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[45].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="5" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[46].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[46].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[46].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="5" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[47].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[47].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[47].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="5" Grid.Column="3" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[48].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[48].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[48].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="5" Grid.Column="4" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[49].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[49].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[49].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="5" Grid.Column="5" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[50].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[50].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[50].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="5" Grid.Column="6" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[51].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[51].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[51].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="5" Grid.Column="7" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[52].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[52].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[52].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="5" Grid.Column="8" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[53].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[53].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[53].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="#FF64CCF1" BorderThickness="3"/>
-            </Grid>
-
-            <Grid Grid.Row="2" Grid.Column="0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="6" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[54].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[54].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[54].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="6" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[55].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[55].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[55].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="6" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[56].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[56].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[56].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="6" Grid.Column="3" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[57].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[57].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[57].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="6" Grid.Column="4" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[58].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[58].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[58].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="6" Grid.Column="5" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[59].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[59].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[59].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="6" Grid.Column="6" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[60].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[60].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[60].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="6" Grid.Column="7" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[61].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[61].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
-                         
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[61].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="6" Grid.Column="8" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[62].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[62].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[62].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="#FF64CCF1" BorderThickness="3"/>
-            </Grid>
-
-            <Grid Grid.Row="2" Grid.Column="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="7" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[63].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[63].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[63].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="7" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[64].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[64].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[64].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="7" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[65].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[65].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[65].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="7" Grid.Column="3" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[66].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[66].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[66].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="7" Grid.Column="4" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[67].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[67].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[67].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="7" Grid.Column="5" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[68].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[68].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[68].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="7" Grid.Column="6" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[69].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[69].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[69].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="7" Grid.Column="7" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[70].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[70].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[70].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="7" Grid.Column="8" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[71].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[71].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[71].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="#FF64CCF1" BorderThickness="3"/>
-            </Grid>
-
-            <Grid Grid.Row="2" Grid.Column="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-
-                <TextBox Grid.Row="0" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="8" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[72].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[72].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[72].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="8" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[73].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[73].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[73].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="0" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="8" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[74].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[74].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[74].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="8" Grid.Column="3" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[75].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[75].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[75].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-
-                <TextBox Grid.Row="1" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="8" Grid.Column="4" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[76].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[76].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[76].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="8" Grid.Column="5" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[77].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[77].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[77].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="0" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="8" Grid.Column="6" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[78].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[78].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[78].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="1" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="8" Grid.Column="7" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[79].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[79].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[79].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <TextBox Grid.Row="2" Grid.Column="2" BorderBrush="#FF64CCF1" BorderThickness="1"
+        <TextBox Grid.Row="8" Grid.Column="8" BorderBrush="#FF64CCF1" BorderThickness="1"
                          VerticalContentAlignment="Center"
                          HorizontalContentAlignment="Center"
                          FontFamily="Arial"
                          FontSize="15"
                          Text="{Binding Cells[80].CellValue, UpdateSourceTrigger=PropertyChanged}" >
-                    <TextBox.Style>
-                        <Style TargetType="{x:Type TextBox}">
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Cells[80].IsValid}" Value="False">
-                                    <Setter Property="Foreground" Value="Red" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBox.Style>
-                </TextBox>
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Cells[80].IsValid}" Value="False">
+                            <Setter Property="Foreground" Value="Red" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
 
-                <Border Grid.ColumnSpan="3" Grid.RowSpan="3"  BorderBrush="#FF64CCF1" BorderThickness="3"/>
-            </Grid>
-            <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToMenuCommand}" Content="Back" HorizontalAlignment="Left" Margin="13,-134,0,0" VerticalAlignment="Top" Height="37" Width="69"
+        <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="0,0,42,42" Grid.RowSpan="4" Grid.ColumnSpan="4"/>
+        <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="0,42,42,0" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Row="2"/>
+        <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="0,41,42,1" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Row="5"/>
+        <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="42,41,0,1" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Row="5" Grid.Column="2"/>
+        <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="41,41,1,1" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Row="5" Grid.Column="5"/>
+        <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="42,0,0,42" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Row="3" Grid.Column="2"/>
+        <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="42,0,0,42" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Column="2"/>
+        <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="42,0,0,42" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Row="3" Grid.Column="5"/>
+        <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="42,1,0,41" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Column="5"/>
+
+        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToMenuCommand}" Content="Back" Margin="13,-134,2,0" VerticalAlignment="Top" Height="37"
             Background="#FF64CCF1"
             Foreground="White"
             FontFamily="Arial"
-            FontSize="20" RenderTransformOrigin="0.039,0.297"/>
+            FontSize="20" RenderTransformOrigin="0.039,0.297" Grid.ColumnSpan="2"/>
 
-            <Label Content="Easy" HorizontalAlignment="Left" Margin="37,-84,0,0" VerticalAlignment="Top" Grid.Column="1" 
+        <!--<Label Content="Easy" HorizontalAlignment="Left" Margin="37,-84,0,0" VerticalAlignment="Top" Grid.Column="1" 
                    FontFamily="Arial"
                    FontSize="20"
                    FontStretch="UltraExpanded"
                    Foreground="#FF64CCF1"
-                   FontWeight="Bold"/>
+                   FontWeight="Bold"/>-->
 
-            <Label Content="{Binding TimerText}" HorizontalAlignment="Left" Margin="23,-131,0,0" VerticalAlignment="Top" Grid.Column="2" 
+        <Label Content="{Binding TimerText}" Margin="42,-116,1,111" Grid.Column="4" 
                 FontFamily="Arial"
                 FontSize="20"
                 FontStretch="UltraExpanded"
                 Foreground="#FF64CCF1"
-                FontWeight="Bold"/>
+                FontWeight="Bold" Grid.ColumnSpan="5"/>
 
-            <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding SaveTheGameCommand}" Content="Save" HorizontalAlignment="Left" Margin="13,-82,0,0" VerticalAlignment="Top" Height="37" Width="69"
+        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding SaveTheGameCommand}" Content="Save" Margin="13,-82,2,0" VerticalAlignment="Top" Height="37"
                 Background="#FF64CCF1"
                 Foreground="White"
                 FontFamily="Arial"
-                FontSize="20" RenderTransformOrigin="0.039,0.297"/>
+                FontSize="20" RenderTransformOrigin="0.039,0.297" Grid.ColumnSpan="2"/>
 
-        </Grid>
-    </Border>
+    </Grid>
 </UserControl>

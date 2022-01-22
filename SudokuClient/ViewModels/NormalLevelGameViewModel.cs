@@ -9,9 +9,9 @@ namespace SudokuClient.ViewModels
     {
         public NormalLevelGameViewModel(NavigationService MenuViewNavigationService) : base(MenuViewNavigationService)
         {
-            sudokuString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?");
-            sudokuStringPlayer = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?");
-            FillCellsBoard();
+            //sudokuString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?");
+            //sudokuStringPlayer = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?");
+            //FillCellsBoard();
         }
     }
 }
