@@ -12,10 +12,12 @@ public class BoardGenerator
     Random rand = new Random();
     private Board board;
     Random randomValue = new Random(); // range (1,10)	
+    string gameLevel = "";
 	
-	public BoardGenerator()
+	public BoardGenerator(string level)
 	{
         List<int> returnList = new List<int>();
+        gameLevel = level;
         returnList = SudokuBoardGenerator(true);
 
     }
@@ -268,23 +270,21 @@ public class BoardGenerator
 
     public void DifficultySudokuString()
     {
-        // easyMode
-        string gameMode = "";
 
         int cellsToHide = 32;
         int index = 0;
         string playerString = "";
         List<char> playerList = new List<char>();
 
-        if (gameMode.Equals("easy"))
+        if (gameLevel.Equals("easy"))
         {
             cellsToHide = 32;
         }
-        else if (gameMode.Equals("normal"))
+        else if (gameLevel.Equals("normal"))
         {
             cellsToHide = 44;
         }
-        else if (gameMode.Equals("hard"))
+        else if (gameLevel.Equals("hard"))
         {
             cellsToHide = 50;
         }

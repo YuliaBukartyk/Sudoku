@@ -14,7 +14,7 @@ namespace SudokuServer
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-            BoardGenerator sudokuBoard = new BoardGenerator();
+            //BoardGenerator sudokuBoard = new BoardGenerator("hello");
             
             
         }
