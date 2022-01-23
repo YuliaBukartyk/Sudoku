@@ -67,11 +67,11 @@ namespace SudokuClient.ViewModels
         }
 
 
-        public RegisterViewModel(NavigationService EntryViewNavigationService)
+        public RegisterViewModel(NavigationService EntryViewNavigationService, NavigationService LogInViewNavigationService)
         {
             _user = new User();
             BackToEntryCommand = new NavigateCommand(EntryViewNavigationService);
-            SubmitCommand = new SubmitCommand(_user);
+            SubmitCommand = new SubmitCommand(_user, LogInViewNavigationService);
 
             
         }
