@@ -26,6 +26,8 @@ namespace SudokuClient.ViewModels
 
         public Game _game;
 
+        private string _level;
+
 
         public Cell[] Cells { get; set; }
 
@@ -39,6 +41,20 @@ namespace SudokuClient.ViewModels
             {
                 this._timerText = value;
                 OnPropertyChanged("TimerText");
+            }
+        }
+        public string Level
+        {
+            get
+            {
+                return this._level;
+            }
+            set
+            {
+                this._level = value;
+                _game.Level = Level;
+                OnPropertyChanged(nameof(Level));
+                
             }
         }
 
@@ -56,8 +72,9 @@ namespace SudokuClient.ViewModels
         public void DispatcherTimerTick(object sender, EventArgs e)
         {
             this._totalSeconds += 1;
-            _game.Duraion = _totalSeconds;
+           // _game.Duraion = _totalSeconds;
             TimerText = string.Format("{0:hh\\:mm\\:ss}", TimeSpan.FromSeconds(this._totalSeconds).Duration());
+            _game.Duraion = TimerText;
             CommandManager.InvalidateRequerySuggested();
         }
 

@@ -6,10 +6,11 @@ namespace SudokuClient.Models
 {
     public class Game
     {
-        private int _duration;
-     
+        private string _duration;
+        private string _level;
 
-        public int Duraion
+
+        public string Duraion
         {
             get
             {
@@ -21,5 +22,16 @@ namespace SudokuClient.Models
             }
         }
 
+        public string Level
+        {
+            get
+            {
+                return this._level;
+            }
+            set
+            {
+                this._level = value;
+            }
+        }
     }
 }
