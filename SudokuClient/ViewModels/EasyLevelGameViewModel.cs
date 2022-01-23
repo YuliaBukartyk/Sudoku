@@ -13,7 +13,7 @@ namespace SudokuClient.ViewModels
     public class EasyLevelGameViewModel : LevelsViewModel
     {
 
-        public EasyLevelGameViewModel(NavigationService MenuViewNavigationService) : base(MenuViewNavigationService)
+        public EasyLevelGameViewModel(NavigationService MenuViewNavigationService, Game game) : base(MenuViewNavigationService, game)
         {
             Level = "Easy";
             sudokuString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?level=" + "easy");

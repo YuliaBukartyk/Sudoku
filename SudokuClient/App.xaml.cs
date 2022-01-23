@@ -1,4 +1,5 @@
-﻿using SudokuClient.Services;
+﻿using SudokuClient.Models;
+using SudokuClient.Services;
 using SudokuClient.Stores;
 using SudokuClient.ViewModels;
 using System;
@@ -17,10 +18,15 @@ namespace SudokuClient
     public partial class App : Application
     {
         private readonly NavigationStore navigationStore;
+        private readonly Game game;
+        private readonly User user;
 
         public App()
         {
             navigationStore = new NavigationStore();
+            game = new Game();
+            user = new User();
+            game.User = user;
         }
 
         protected override void OnStartup(StartupEventArgs e)
@@ -43,12 +49,12 @@ namespace SudokuClient
         }
         private LogInViewModel CreateLogInViewModel()
         {
-            return new LogInViewModel(new NavigationService(navigationStore, CreateEntryViewModel), new NavigationService(navigationStore, CreateMenuGameViewModel));
+            return new LogInViewModel(new NavigationService(navigationStore, CreateEntryViewModel), new NavigationService(navigationStore, CreateMenuGameViewModel), user);
         }
 
         private RegisterViewModel CreateRegisterViewModel()
         {
-            return new RegisterViewModel(new NavigationService(navigationStore, CreateEntryViewModel), new NavigationService(navigationStore, CreateLogInViewModel));
+            return new RegisterViewModel(new NavigationService(navigationStore, CreateEntryViewModel), new NavigationService(navigationStore, CreateLogInViewModel), user);
         }
 
         private GameLevelsViewModel CreateGameLevelsViewModel()
@@ -59,17 +65,17 @@ namespace SudokuClient
 
         private EasyLevelGameViewModel CreateEasyLevelGameViewModel()
         {
-            return new EasyLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel));
+            return new EasyLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel), game);
         }
 
         private NormalLevelGameViewModel CreateNormalLevelGameViewModel()
         {
-            return new NormalLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel));
+            return new NormalLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel), game);
         }
 
         private HardLevelGameViewModel CreateHardLevelGameViewModel()
         {
-            return new HardLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel));
+            return new HardLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel), game);
         }
 
         private MenuGameViewModel CreateMenuGameViewModel()

@@ -3,6 +3,7 @@ using SudokuClient.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows;
 
 namespace SudokuClient.Commands
 {
@@ -19,28 +20,19 @@ namespace SudokuClient.Commands
 
         public override void Execute(object parameter)
         {
-            //var x = _user.Name;
-            //var y = _user.Password;
-            //bool success = false;
             string success = "";
 
             success = Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/verifyuser?name=" + _user.Name.ToString() + "&" + "password=" + _user.Password.ToString());
 
             if (success.Equals("true"))
             {
-                // success! there is user and password is correct
-                int i = 0;
-                i = 200;
+                _navigationService.Navigate();
             }
             else
             {
-                // false, no such user or password is incorrect
-                int i = 1;
-                i = 2;
+                MessageBox.Show(Application.Current.MainWindow, "One of the credentials is not correct, please try again", "Login Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
             }
 
-
-            _navigationService.Navigate();
         }
     }
 }

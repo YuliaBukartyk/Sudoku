@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SudokuServer.Models;
 
 namespace SudokuServer.Migrations
 {
     [DbContext(typeof(SudokuDBContext))]
-    partial class SudokuDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220123204644_useraddedtogametable")]
+    partial class useraddedtogametable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

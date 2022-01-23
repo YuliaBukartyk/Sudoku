@@ -29,7 +29,7 @@ namespace SudokuClient.Commands
             }
             else
             {
-                MessageBox.Show(Application.Current.MainWindow, "Password error", "Login Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
+                MessageBox.Show(Application.Current.MainWindow, "The passwords are not matching, please try again", "Register Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
             }
                 
 
