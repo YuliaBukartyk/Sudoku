@@ -13,10 +13,7 @@ namespace SudokuServer
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
-            //BoardGenerator sudokuBoard = new BoardGenerator("hello");
-            
-            
+            CreateHostBuilder(args).Build().Run();           
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

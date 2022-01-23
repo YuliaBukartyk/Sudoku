@@ -16,7 +16,7 @@ namespace SudokuServer.Controllers
         [HttpGet("addgameinfo")]
         public IEnumerable<Game> AddGameInfo(int duration, string level)
         {
-            using (var _context = new DataContext())
+            using (var _context = new SudokuDBContext())
             {
                 Game game = new Game();
 

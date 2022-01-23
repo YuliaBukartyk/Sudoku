@@ -26,7 +26,7 @@ namespace SudokuServer.Controllers
             BoardGenerator sudokuBoard = new BoardGenerator(level);
             //sudokuBoard.DifficultySudokuString(level);
             
-            using (var _context = new sudokuLogic.Models.SudokuDBContext())
+            using (var _context = new SudokuDBContext())
             {
                 sudokuBoardList = _context.Boards.ToList(); // has the contect of the table 
                 listSize = sudokuBoardList.Count();
@@ -48,7 +48,7 @@ namespace SudokuServer.Controllers
             int listSize = 0;
             List<int> sudokuList = new List<int>();
 
-            using (var _context = new sudokuLogic.Models.SudokuDBContext())
+            using (var _context = new SudokuDBContext())
             {
                 sudokuBoardList = _context.Boards.ToList(); // has the contect of the table 
                 listSize = sudokuBoardList.Count();

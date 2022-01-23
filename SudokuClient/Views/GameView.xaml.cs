@@ -13,19 +13,12 @@ using System.Windows.Shapes;
 
 namespace SudokuClient.Views
 {
-    /// <summary>
-    /// Interaction logic for EasyLevelGameView.xaml
-    /// </summary>
-    public partial class EasyLevelGameView : UserControl
+
+    public partial class GameView : UserControl
     {
-        public EasyLevelGameView()
+        public GameView()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

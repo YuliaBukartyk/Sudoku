@@ -69,7 +69,8 @@
                  FontSize="26"
                  BorderBrush="#FF64CCF1"
                  Background="#FFF6F6F6"
-                 Foreground="DarkGray"/>
+                 Foreground="DarkGray"
+                 Text="{Binding Name}"/>
 
         <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding LogedToGameCommand}" Content="Log in" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="100"
                 Background="#FF64CCF1"

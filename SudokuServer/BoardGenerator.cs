@@ -2,8 +2,6 @@
 using SudokuServer.Models;
 using System.Collections.Generic;
 using System.Text;
-//using sudokuLogic.Models;
-//using SudokuServer.Models;
 
 public class BoardGenerator
 {
@@ -336,7 +334,7 @@ public class BoardGenerator
         DifficultySudokuString();
 
         // enters to the DB the board created
-        using (var _context = new sudokuLogic.Models.SudokuDBContext())
+        using (var _context = new SudokuDBContext())
         {
 
             _context.Boards.Add(board);
