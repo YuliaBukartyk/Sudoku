@@ -33,12 +33,12 @@ namespace SudokuServer.Controllers
 
 
         [HttpGet("verifyuser")]
-        public string VerifyUser(string username, string password)
+        public string VerifyUser(string name, string password)
         {
             using (SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True"))
             {
-                SqlCommand cmd = new SqlCommand("select * from Users where username like @username and password = @password;");
-                cmd.Parameters.AddWithValue("@username", username);
+                SqlCommand cmd = new SqlCommand("select * from Users where name = @name and password = @password;");
+                cmd.Parameters.AddWithValue("@name", name);
                 cmd.Parameters.AddWithValue("@password", password);
                 cmd.Connection = con;
                 con.Open();
