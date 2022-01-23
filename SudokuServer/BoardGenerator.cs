@@ -2,6 +2,7 @@
 using SudokuServer.Models;
 using System.Collections.Generic;
 using System.Text;
+using System.Collections;
 
 public class BoardGenerator
 {
@@ -269,10 +270,11 @@ public class BoardGenerator
     public void DifficultySudokuString()
     {
 
-        int cellsToHide = 32;
+        int cellsToHide = 0;
         int index = 0;
         string playerString = "";
         List<char> playerList = new List<char>();
+        List<int> indexesVisited = new List<int>();
 
         if (gameLevel.Equals("easy"))
         {
@@ -299,7 +301,14 @@ public class BoardGenerator
 
         for (int i = 0; i < cellsToHide; i++)
         {
+            
             index = rand.Next(0, 81);
+            
+            while (indexesVisited.Contains(index))
+            {
+                index = rand.Next(0, 81);
+            }
+            indexesVisited.Add(index);
             playerList[index] = '0'; // change random cells according to difficulty level to zero, to hide from player
 
         }
