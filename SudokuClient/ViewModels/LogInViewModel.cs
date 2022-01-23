@@ -14,6 +14,23 @@ namespace SudokuClient.ViewModels
         public ICommand LogedToGameCommand { get; }
 
         private string _password;
+        private string _name;
+        private User user;
+
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
+                user.Name = Name;
+                OnPropertyChanged(nameof(Name));
+
+            }
+        }
 
         public string Password
         {
@@ -24,6 +41,7 @@ namespace SudokuClient.ViewModels
             set
             {
                 _password = value;
+                user.Password = Password;
                 OnPropertyChanged(nameof(Password));
 
             }
@@ -32,8 +50,9 @@ namespace SudokuClient.ViewModels
 
         public LogInViewModel(NavigationService EntryViewNavigationService, NavigationService MenuGameViewNavigationService)
         {
+            user = new User();
             BackToEntryCommand = new NavigateCommand(EntryViewNavigationService);
-            LogedToGameCommand = new NavigateCommand(MenuGameViewNavigationService);
+            LogedToGameCommand = new LogedToGameCommand(user, MenuGameViewNavigationService);
         }
 
 

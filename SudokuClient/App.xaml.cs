@@ -37,9 +37,6 @@ namespace SudokuClient
             base.OnStartup(e);
         }
 
-
-
-
         private EntryViewModel CreateEntryViewModel()
         {
             return new EntryViewModel(new NavigationService(navigationStore,CreateLogInViewModel), new NavigationService(navigationStore, CreateRegisterViewModel));

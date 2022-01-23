@@ -25,15 +25,15 @@
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type vms:EasyLevelGameViewModel}">
-                <views:EasyLevelGameView />
+                <views:GameView />
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type vms:NormalLevelGameViewModel}">
-                <views:NormalLevelGameView />
+                <views:GameView />
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type vms:HardLevelGameViewModel}">
-                <views:EasyLevelGameView />
+                <views:GameView />
             </DataTemplate>
             
             <DataTemplate DataType="{x:Type vms:MenuGameViewModel}">
@@ -43,8 +43,7 @@
             <DataTemplate DataType="{x:Type vms:UserProfileViewModel}">
                 <views:UserProfileView />
             </DataTemplate>
-
-            
+          
         </Grid.Resources>
 
         <ContentControl Content="{Binding CurrentViewModel}"/>
