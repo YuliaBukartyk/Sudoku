@@ -96,13 +96,10 @@ C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuCli
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.csproj.AssemblyReference.cache
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Components\BindablePasswordBox.g.cs
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\EasyLevelGameView.g.cs
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\EntryView.g.cs
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\GameLevelsView.g.cs
-C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\HardLevelGameView.g.cs
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\LogInView.g.cs
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\MenuGameView.g.cs
-C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\NormalLevelGameView.g.cs
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\RegisterView.g.cs
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\UserProfileView.g.cs
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\App.g.cs
@@ -119,13 +116,10 @@ C:\Users\valen\Desktop\Sudoku\SudokuClient\bin\Debug\netcoreapp3.1\SudokuClient.
 C:\Users\valen\Desktop\Sudoku\SudokuClient\bin\Debug\netcoreapp3.1\SudokuClient.pdb
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Components\BindablePasswordBox.baml
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\MainWindow.baml
-C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\EasyLevelGameView.baml
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\EntryView.baml
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\GameLevelsView.baml
-C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\HardLevelGameView.baml
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\LogInView.baml
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\MenuGameView.baml
-C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\NormalLevelGameView.baml
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\RegisterView.baml
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\UserProfileView.baml
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.g.resources
@@ -136,3 +130,5 @@ C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.genruntimeconfig.cache
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\GameView.g.cs
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\GameView.baml
+C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\GameView.g.cs
+C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\GameView.baml

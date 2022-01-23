@@ -20,7 +20,7 @@ namespace SudokuClient.Commands
 
             if (VerifyPassword())
             {
-                Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/adduser?name=" + _user.Name.ToString());
+                Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/adduser?name=" + _user.Name.ToString() + "&" + "password=" + _user.Password.ToString());
             }
             else
             {
