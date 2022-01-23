@@ -4,16 +4,18 @@ using System.Collections.Generic;
 using System.Text;
 using SudokuClient.Utils;
 using System.Windows;
-
+using SudokuClient.Services;
 
 namespace SudokuClient.Commands
 {
     public class SubmitCommand : CommandBase
     {
         private readonly User _user;
-        public SubmitCommand(User newUser)
+        private NavigationService _navigationService;
+        public SubmitCommand(User newUser, NavigationService LogInViewNavigationService)
         {
             _user = newUser;
+            _navigationService = LogInViewNavigationService;
         }
 
         public override void Execute(object parameter)
@@ -22,10 +24,11 @@ namespace SudokuClient.Commands
             if (VerifyPassword())
             {
                 Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/adduser?name=" + _user.Name.ToString() + "&" + "password=" + _user.Password.ToString());
+                MessageBox.Show(Application.Current.MainWindow, "Thanks for Register", "Register Succeed", MessageBoxButton.OK, MessageBoxImage.None, MessageBoxResult.OK);
+                _navigationService.Navigate();
             }
             else
             {
-               // MessageBox.Show("Password error");
                 MessageBox.Show(Application.Current.MainWindow, "Password error", "Login Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
             }
                 
