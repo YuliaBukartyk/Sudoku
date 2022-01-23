@@ -72,10 +72,13 @@ namespace SudokuClient.ViewModels
         public void DispatcherTimerTick(object sender, EventArgs e)
         {
             this._totalSeconds += 1;
-           // _game.Duraion = _totalSeconds;
             TimerText = string.Format("{0:hh\\:mm\\:ss}", TimeSpan.FromSeconds(this._totalSeconds).Duration());
             _game.Duraion = TimerText;
             CommandManager.InvalidateRequerySuggested();
+            if (_game.EndGame)
+            {
+                dispatcherTimer.Stop();
+            }
         }
 
         public void FillCellsBoard()

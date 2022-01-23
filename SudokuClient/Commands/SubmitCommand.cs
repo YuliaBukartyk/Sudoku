@@ -5,6 +5,7 @@ using System.Text;
 using SudokuClient.Utils;
 using System.Windows;
 
+
 namespace SudokuClient.Commands
 {
     public class SubmitCommand : CommandBase

@@ -21,9 +21,8 @@ namespace SudokuServer.Models
 
             //optionsBuilder.UseSqlServer(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             //optionsBuilder.UseSqlServer(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True");
-            optionsBuilder.UseSqlServer(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True");
-            //optionsBuilder.UseSqlServer(@"Data Source = YROTBER-MOBL; Initial Catalog = SudokuDB; Integrated Security = True");
-
+            optionsBuilder.UseSqlServer(@"Data Source=YROTBER-MOBL;Initial Catalog=SudokuDB;Integrated Security=True");
+            
         }
     }
 }

@@ -9,8 +9,8 @@ using SudokuServer.Models;
 namespace SudokuServer.Migrations
 {
     [DbContext(typeof(SudokuDBContext))]
-    [Migration("20220123090856_Yulia")]
-    partial class Yulia
+    [Migration("20220123130508_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -45,8 +45,8 @@ namespace SudokuServer.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("duration")
-                        .HasColumnType("int");
+                    b.Property<string>("duration")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("level")
                         .HasColumnType("nvarchar(max)");
