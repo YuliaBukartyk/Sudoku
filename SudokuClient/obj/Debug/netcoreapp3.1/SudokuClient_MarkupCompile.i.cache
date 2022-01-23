@@ -16,5 +16,5 @@ C:\Users\valen\Desktop\Sudoku\SudokuClient\App.xaml
 192-1533232326
 Components\BindablePasswordBox.xaml;MainWindow.xaml;Views\EntryView.xaml;Views\GameLevelsView.xaml;Views\GameView.xaml;Views\LogInView.xaml;Views\MenuGameView.xaml;Views\RegisterView.xaml;Views\UserProfileView.xaml;
 
-False
+True
 
