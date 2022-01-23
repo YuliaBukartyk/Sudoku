@@ -31,11 +31,10 @@ namespace SudokuServer.Controllers
             }
         }
 
-
         [HttpGet("verifyuser")]
         public string VerifyUser(string name, string password)
         {
-            using (SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True"))
+            using (SqlConnection con = new SqlConnection(@"Data Source=YROTBER-MOBL;Initial Catalog=SudokuDB;Integrated Security=True"))
             {
                 SqlCommand cmd = new SqlCommand("select * from Users where name = @name and password = @password;");
                 cmd.Parameters.AddWithValue("@name", name);
@@ -57,7 +56,7 @@ namespace SudokuServer.Controllers
                 else
                 {
                     // check what wrong - username or password
-                    using (SqlConnection con1 = new SqlConnection(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True")) // using is used here because these objects implement IDisposable
+                    using (SqlConnection con1 = new SqlConnection(@"Data Source=YROTBER-MOBL;Initial Catalog=SudokuDB;Integrated Security=True")) // using is used here because these objects implement IDisposable
                     {
                         con1.Open(); // Using will take care of closing the connection when it leaves scope.
                         using (SqlCommand cmd1 = new SqlCommand("SELECT * FROM Users WHERE name = @usename", con1))
@@ -79,41 +78,9 @@ namespace SudokuServer.Controllers
                             }
                         }
                     }
-
-
-
-
-                    /*
-                    if (loginSuccessful)
-                    {
-                        return "password is invalid";
-                    }
-                    else
-                    {
-                        return "no such user name";
-                    }
-                    */
-                    
-                    
-                    //return "false";
                 }
-            }
-
-
-                /*
-                User user = new User();
-                user.name = name;
-
-                _context.Users.Add(user);
-                _context.SaveChanges();
-
-                return _context.Users.ToList();
-                */
-
-                //return false;
-            
+            }        
         }
-
 
     }
 }

@@ -58,9 +58,9 @@ namespace SudokuClient.ViewModels
             }
         }
 
-        public LevelsViewModel(NavigationService MenuViewNavigationService)
+        public LevelsViewModel(NavigationService MenuViewNavigationService, Game game)
         {
-            _game = new Game();
+            _game = game;
             BackToMenuCommand = new NavigateCommand(MenuViewNavigationService);
             SaveTheGameCommand = new SaveTheGameCommand(_game);
             dispatcherTimer = new DispatcherTimer();

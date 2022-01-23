@@ -21,9 +21,7 @@ namespace SudokuClient.Models
                 this._name = value;
             }
         }
-
-
-        
+  
 
         public string Password
         {

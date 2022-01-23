@@ -1,4 +1,5 @@
-﻿using SudokuClient.Services;
+﻿using SudokuClient.Models;
+using SudokuClient.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,7 +8,7 @@ namespace SudokuClient.ViewModels
 {
     public class NormalLevelGameViewModel : LevelsViewModel
     {
-        public NormalLevelGameViewModel(NavigationService MenuViewNavigationService) : base(MenuViewNavigationService)
+        public NormalLevelGameViewModel(NavigationService MenuViewNavigationService, Game game) : base(MenuViewNavigationService, game)
         {
             Level = "Normal";
             sudokuString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?level=" + "normal");

@@ -9,6 +9,7 @@ namespace SudokuClient.Models
         private string _duration;
         private string _level;
         private bool _endGame = false;
+        private User _user;
 
         public string Duraion
         {
@@ -45,5 +46,19 @@ namespace SudokuClient.Models
                 this._endGame = value;
             }
         }
+
+        public User User
+        {
+            get
+            {
+                return this._user;
+            }
+            set
+            {
+                this._user = value;
+            }
+        }
+
+
     }
 }
