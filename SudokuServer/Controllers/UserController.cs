@@ -56,7 +56,46 @@ namespace SudokuServer.Controllers
                 }
                 else
                 {
-                    return "false";
+                    // check what wrong - username or password
+                    using (SqlConnection con1 = new SqlConnection(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True")) // using is used here because these objects implement IDisposable
+                    {
+                        con1.Open(); // Using will take care of closing the connection when it leaves scope.
+                        using (SqlCommand cmd1 = new SqlCommand("SELECT * FROM Users WHERE name = @usename", con1))
+                        {
+                            cmd1.Parameters.AddWithValue("@usename", name);
+                            //cmd1.Parameters.Add("CustomerID", SqlDbType.VarChar).Value = userValue;
+                            using (SqlDataReader dr = cmd1.ExecuteReader())
+                            {
+                                if (dr.Read())
+                                {
+                                    //Console.WriteLine(dr[1] + " Your product was shipped: " + dr[5]);
+                                    return "password is invalid";
+                                }
+                                else
+                                {
+                                    //Console.WriteLine("Nothing was returned for Customer Id '" + userValue + "'");
+                                    return "no such user name";
+                                }
+                            }
+                        }
+                    }
+
+
+
+
+                    /*
+                    if (loginSuccessful)
+                    {
+                        return "password is invalid";
+                    }
+                    else
+                    {
+                        return "no such user name";
+                    }
+                    */
+                    
+                    
+                    //return "false";
                 }
             }
 
