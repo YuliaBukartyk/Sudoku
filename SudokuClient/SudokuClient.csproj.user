@@ -10,7 +10,7 @@
     <Compile Update="Components\BindablePasswordBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\EasyLevelGameView.xaml.cs">
+    <Compile Update="Views\GameView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\EntryView.xaml.cs">
@@ -19,16 +19,10 @@
     <Compile Update="Views\GameLevelsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\HardLevelGameView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Views\LogInView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\MenuGameView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\NormalLevelGameView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\RegisterView.xaml.cs">
@@ -45,7 +39,7 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\EasyLevelGameView.xaml">
+    <Page Update="Views\GameView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\EntryView.xaml">
@@ -54,16 +48,10 @@
     <Page Update="Views\GameLevelsView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\HardLevelGameView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Views\LogInView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MenuGameView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\NormalLevelGameView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\RegisterView.xaml">

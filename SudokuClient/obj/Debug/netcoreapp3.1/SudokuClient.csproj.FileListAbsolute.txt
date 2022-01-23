@@ -59,7 +59,6 @@ C:\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.genruntimeconfig.cac
 C:\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\EasyLevelGameView.g.cs
 C:\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\EasyLevelGameView.baml
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\EasyLevelGameView.g.cs
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\EntryView.g.cs
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\GameLevelsView.g.cs
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\LogInView.g.cs
@@ -77,7 +76,6 @@ C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuCli
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\bin\Debug\netcoreapp3.1\SudokuClient.dll
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\bin\Debug\netcoreapp3.1\SudokuClient.pdb
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\MainWindow.baml
-C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\EasyLevelGameView.baml
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\EntryView.baml
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\GameLevelsView.baml
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\LogInView.baml
@@ -92,10 +90,6 @@ C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuCli
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\MenuGameView.baml
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\UserProfileView.g.cs
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\UserProfileView.baml
-C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\HardLevelGameView.g.cs
-C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\NormalLevelGameView.g.cs
-C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\HardLevelGameView.baml
-C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\NormalLevelGameView.baml
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.csproj.AssemblyReference.cache
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Components\BindablePasswordBox.g.cs
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Components\BindablePasswordBox.baml
@@ -140,3 +134,5 @@ C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.AssemblyInfo.cs
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.csproj.CoreCompileInputs.cache
 C:\Users\valen\Desktop\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\SudokuClient.genruntimeconfig.cache
+C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\GameView.g.cs
+C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\obj\Debug\netcoreapp3.1\Views\GameView.baml

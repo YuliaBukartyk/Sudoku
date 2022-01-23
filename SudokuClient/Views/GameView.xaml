@@ -1,9 +1,9 @@
-﻿<UserControl x:Class="SudokuClient.Views.EasyLevelGameView"
+﻿<UserControl x:Class="SudokuClient.Views.GameView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SudokuClient.Views" xmlns:viewmodels="clr-namespace:SudokuClient.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:EasyLevelGameViewModel}"
+             xmlns:local="clr-namespace:SudokuClient.Views" xmlns:viewmodels="clr-namespace:SudokuClient.ViewModels" 
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="450" Background="White">
     <UserControl.Resources>
@@ -1489,12 +1489,12 @@
             FontFamily="Arial"
             FontSize="20" RenderTransformOrigin="0.039,0.297" Grid.ColumnSpan="2"/>
 
-        <!--<Label Content="Easy" HorizontalAlignment="Left" Margin="37,-84,0,0" VerticalAlignment="Top" Grid.Column="1" 
+        <Label Content="{Binding Level}" HorizontalAlignment="Left" Margin="21,-157,0,166" Grid.Column="3" 
                    FontFamily="Arial"
                    FontSize="20"
                    FontStretch="UltraExpanded"
                    Foreground="#FF64CCF1"
-                   FontWeight="Bold"/>-->
+                   FontWeight="Bold" Grid.ColumnSpan="2"/>
 
         <Label Content="{Binding TimerText}" Margin="42,-116,1,111" Grid.Column="4" 
                 FontFamily="Arial"
