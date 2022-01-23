@@ -43,8 +43,8 @@ namespace SudokuServer.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("duration")
-                        .HasColumnType("int");
+                    b.Property<string>("duration")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("level")
                         .HasColumnType("nvarchar(max)");
