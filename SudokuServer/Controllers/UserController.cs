@@ -15,7 +15,7 @@ namespace SudokuServer.Controllers
         [HttpGet("adduser")]
         public IEnumerable<User> AddUser(string name)
         {
-            using (var _context = new DataContext())
+            using (var _context = new SudokuDBContext())
             {
                 User user = new User();
                 user.name = name;
@@ -26,5 +26,7 @@ namespace SudokuServer.Controllers
                 return _context.Users.ToList();
             }
         }
+
+
     }
 }

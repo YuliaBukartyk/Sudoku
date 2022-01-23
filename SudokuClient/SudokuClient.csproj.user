@@ -7,7 +7,10 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\EasyLevelGameView.xaml.cs">
+    <Compile Update="Components\BindablePasswordBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GameView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\EntryView.xaml.cs">
@@ -19,15 +22,24 @@
     <Compile Update="Views\LogInView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\MenuGameView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\RegisterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserProfileView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Components\BindablePasswordBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\EasyLevelGameView.xaml">
+    <Page Update="Views\GameView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\EntryView.xaml">
@@ -39,7 +51,13 @@
     <Page Update="Views\LogInView.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\MenuGameView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\RegisterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserProfileView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

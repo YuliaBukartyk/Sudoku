@@ -4,6 +4,7 @@ using SudokuClient.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows;
 using System.Windows.Input;
 
 namespace SudokuClient.ViewModels
@@ -13,9 +14,10 @@ namespace SudokuClient.ViewModels
         public ICommand BackToEntryCommand { get; }
         public ICommand SubmitCommand { get; }
 
-        private User _user;
+        private readonly User _user;
         private string _username;
         private string _password;
+        private string _verificationPassword;
 
         public string Username
         {
@@ -49,12 +51,29 @@ namespace SudokuClient.ViewModels
         }
 
 
+        public string VerificationPassword
+        {
+            get
+            {
+                return _verificationPassword;
+            }
+            set
+            {
+                _verificationPassword = value;
+                OnPropertyChanged(nameof(VerificationPassword));
+                _user.VerificationPassword = _verificationPassword;
+                
+            }
+        }
+
+
         public RegisterViewModel(NavigationService EntryViewNavigationService)
         {
             _user = new User();
             BackToEntryCommand = new NavigateCommand(EntryViewNavigationService);
             SubmitCommand = new SubmitCommand(_user);
 
+            
         }
     }
 }

@@ -8,6 +8,7 @@ namespace SudokuClient.Models
     {
         private string _name;
         private string _password;
+        private string _verificationPassword;
 
         public string Name
         {
@@ -33,6 +34,20 @@ namespace SudokuClient.Models
             set
             {
                 this._password = value;
+            }
+        }
+
+
+        public string VerificationPassword
+        {
+            get
+            {
+                return _verificationPassword;
+            }
+            set
+            {
+                _verificationPassword = value;
+
             }
         }
     }

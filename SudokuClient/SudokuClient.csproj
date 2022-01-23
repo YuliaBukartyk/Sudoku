@@ -7,11 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\sudokuIcon.png" />
+    <None Remove="Images\sudokuLogo.PNG" />
     <None Remove="Views\arrow-back-icon-9.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\arrow-back-icon-9.jpg" />
+    <Resource Include="Images\sudokuIcon.png" />
+    <Resource Include="Images\sudokuLogo.PNG" />
   </ItemGroup>
 
 </Project>

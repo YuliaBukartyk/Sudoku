@@ -7,7 +7,7 @@
         xmlns:vms = "clr-namespace:SudokuClient.ViewModels"
         xmlns:local="clr-namespace:SudokuClient"
         mc:Ignorable="d"
-        Title="Sudoku" Height="400" Width="400" WindowStartupLocation="CenterScreen">
+        Title="Sudoku" Height="800" Width="450" WindowStartupLocation="CenterScreen" Icon="/Images/sudokuIcon.png">
     <Grid>
 
         <Grid.Resources>
@@ -25,8 +25,25 @@
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type vms:EasyLevelGameViewModel}">
-                <views:EasyLevelGameView />
+                <views:GameView />
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vms:NormalLevelGameViewModel}">
+                <views:GameView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vms:HardLevelGameViewModel}">
+                <views:GameView />
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type vms:MenuGameViewModel}">
+                <views:MenuGameView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type vms:UserProfileViewModel}">
+                <views:UserProfileView />
+            </DataTemplate>
+          
         </Grid.Resources>
 
         <ContentControl Content="{Binding CurrentViewModel}"/>

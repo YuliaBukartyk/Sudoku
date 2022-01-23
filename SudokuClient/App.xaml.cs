@@ -37,16 +37,13 @@ namespace SudokuClient
             base.OnStartup(e);
         }
 
-
-
-
         private EntryViewModel CreateEntryViewModel()
         {
             return new EntryViewModel(new NavigationService(navigationStore,CreateLogInViewModel), new NavigationService(navigationStore, CreateRegisterViewModel));
         }
         private LogInViewModel CreateLogInViewModel()
         {
-            return new LogInViewModel(new NavigationService(navigationStore, CreateEntryViewModel), new NavigationService(navigationStore, CreateGameLevelsViewModel));
+            return new LogInViewModel(new NavigationService(navigationStore, CreateEntryViewModel), new NavigationService(navigationStore, CreateMenuGameViewModel));
         }
 
         private RegisterViewModel CreateRegisterViewModel()
@@ -56,14 +53,34 @@ namespace SudokuClient
 
         private GameLevelsViewModel CreateGameLevelsViewModel()
         {
-            return new GameLevelsViewModel(new NavigationService(navigationStore, CreateEasyLevelGameViewModel), new NavigationService(navigationStore, CreateEntryViewModel));
+            return new GameLevelsViewModel(new NavigationService(navigationStore, CreateEasyLevelGameViewModel), new NavigationService(navigationStore, CreateNormalLevelGameViewModel),
+                new NavigationService(navigationStore, CreateHardLevelGameViewModel), new NavigationService(navigationStore, CreateEntryViewModel));
         }
 
         private EasyLevelGameViewModel CreateEasyLevelGameViewModel()
         {
-            return new EasyLevelGameViewModel();
+            return new EasyLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel));
         }
 
+        private NormalLevelGameViewModel CreateNormalLevelGameViewModel()
+        {
+            return new NormalLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel));
+        }
+
+        private HardLevelGameViewModel CreateHardLevelGameViewModel()
+        {
+            return new HardLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel));
+        }
+
+        private MenuGameViewModel CreateMenuGameViewModel()
+        {
+            return new MenuGameViewModel(new NavigationService(navigationStore, CreateGameLevelsViewModel), new NavigationService(navigationStore, CreateUserProfileViewModel));
+        }
+
+        private UserProfileViewModel CreateUserProfileViewModel()
+        {
+            return new UserProfileViewModel();
+        }
 
     }
 }
