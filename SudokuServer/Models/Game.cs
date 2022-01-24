@@ -13,7 +13,7 @@ namespace SudokuServer.Models
             public int Id { get; set; }
             public string duration { get; set; }
             public string level { get; set; }
-            public User user { get; set; }
+            public string name { get; set; }
 
 
     }    

@@ -16,7 +16,7 @@ namespace SudokuClient.Commands
         public override void Execute(object parameter)
         {
            _game.EndGame = true;
-           var x = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Game/addgameinfo?duration=" + _game.Duraion + "&" + "level=" + _game.Level + "&" + "user=" + _game.User);
+           var x = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Game/addgameinfo?duration=" + _game.Duraion + "&" + "level=" + _game.Level + "&" + "name=" + _game.User.Name.ToString());
 
         }
     }
