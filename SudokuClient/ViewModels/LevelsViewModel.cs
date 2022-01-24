@@ -73,7 +73,7 @@ namespace SudokuClient.ViewModels
         {
             this._totalSeconds += 1;
             TimerText = string.Format("{0:hh\\:mm\\:ss}", TimeSpan.FromSeconds(this._totalSeconds).Duration());
-            _game.Duraion = TimerText;
+            _game.Duration = TimerText;
             CommandManager.InvalidateRequerySuggested();
             if (_game.EndGame)
             {

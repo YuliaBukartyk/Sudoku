@@ -64,6 +64,8 @@
         </Style>
     </UserControl.Resources>
     <Grid>
-        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Game History" HorizontalAlignment="Center" Margin="0,414,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.321,4.659" Width="450" Height="53"/>
+        <Button Style="{DynamicResource RoundedButtonStyle}" Content="Game History" HorizontalAlignment="Center" Margin="0,414,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.321,4.659" Width="450" Height="53"
+                Command="{Binding ShowGamesHistoryViewCommand}"/>
+        
     </Grid>
 </UserControl>

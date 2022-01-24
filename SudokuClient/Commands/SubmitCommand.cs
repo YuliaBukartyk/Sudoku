@@ -65,9 +65,17 @@ namespace SudokuClient.Commands
             {
                 return false;
             }
-            else
+            else 
             {
-                return true;
+                string nameCheck = Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/verifyuniqueusername?name=" + _user.Name.ToString());
+                if (nameCheck.Equals("UserName not available"))
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }            
             }
         }
 
