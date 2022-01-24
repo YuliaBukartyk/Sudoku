@@ -23,22 +23,32 @@ namespace SudokuClient.Commands
 
             if (VerifyPassword())
             {
-                Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/adduser?name=" + _user.Name.ToString() + "&" + "password=" + _user.Password.ToString());
-                MessageBox.Show(Application.Current.MainWindow, "Thanks for Register", "Register Succeed", MessageBoxButton.OK, MessageBoxImage.None, MessageBoxResult.OK);
-                _navigationService.Navigate();
+                if (VerifyName())
+                {
+                    Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/adduser?name=" + _user.Name.ToString() + "&" + "password=" + _user.Password.ToString());
+                    MessageBox.Show(Application.Current.MainWindow, "Thanks for Register", "Register Succeed", MessageBoxButton.OK, MessageBoxImage.None, MessageBoxResult.OK);
+                    _navigationService.Navigate();
+                }
+                else
+                {
+                    MessageBox.Show(Application.Current.MainWindow, "The name is already exist or is empty, please try again", "Register Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
+                }
             }
             else
             {
-                MessageBox.Show(Application.Current.MainWindow, "The passwords are not matching, please try again", "Register Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
+                MessageBox.Show(Application.Current.MainWindow, "The passwords are not matching or empty, please try again", "Register Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
             }
-                
 
         }
 
 
         private bool VerifyPassword()
         {
-            if (_user.Password.Equals(_user.VerificationPassword))
+            if (_user.Password == null)
+            {
+                return false;
+            }
+            else if (_user.Password.Equals(_user.VerificationPassword))
             {
                 return true;
             }
@@ -47,5 +57,19 @@ namespace SudokuClient.Commands
                 return false;
             }
         }
+        
+
+        private bool VerifyName()
+        {
+            if (_user.Name == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
     }
 }
