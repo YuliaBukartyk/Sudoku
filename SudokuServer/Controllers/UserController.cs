@@ -82,5 +82,36 @@ namespace SudokuServer.Controllers
             }        
         }
 
+
+        [HttpGet("verifyuniqueusername")]
+        public string VerifyUniqueUsername(string name)
+        {
+
+            using (SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True"))
+            {
+                SqlCommand cmd = new SqlCommand("select * from Users where name = @name;");
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Connection = con;
+                con.Open();
+
+                DataSet ds = new DataSet();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds);
+                con.Close();
+
+                bool usernameExists = ((ds.Tables.Count > 0) && (ds.Tables[0].Rows.Count > 0));
+
+                if (usernameExists)
+                {
+                    return "UserName not available";
+                }
+                else
+                {
+                    return "successfully registered";
+
+                }
+            }
+        }
+
     }
 }
