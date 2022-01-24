@@ -87,7 +87,7 @@ namespace SudokuServer.Controllers
         public string VerifyUniqueUsername(string name)
         {
 
-            using (SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True"))
+            using (SqlConnection con = new SqlConnection(@"Data Source=YROTBER-MOBL;Initial Catalog=SudokuDB;Integrated Security=True"))
             {
                 SqlCommand cmd = new SqlCommand("select * from Users where name = @name;");
                 cmd.Parameters.AddWithValue("@name", name);

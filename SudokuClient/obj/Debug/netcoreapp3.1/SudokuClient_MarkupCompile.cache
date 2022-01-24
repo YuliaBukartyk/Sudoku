@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\yrotber\OneDrive - Intel Corporation\Documents\Studies\Sudoku\SudokuClient\App.xaml
-9708691639
+101993995731
 
-381244975069
-192-1533232326
-Components\BindablePasswordBox.xaml;MainWindow.xaml;Views\EntryView.xaml;Views\GameLevelsView.xaml;Views\GameView.xaml;Views\LogInView.xaml;Views\MenuGameView.xaml;Views\RegisterView.xaml;Views\UserProfileView.xaml;
+39-989585693
+218310873210
+Components\BindablePasswordBox.xaml;MainWindow.xaml;Views\EntryView.xaml;Views\GameLevelsView.xaml;Views\GamesHistoryView.xaml;Views\GameView.xaml;Views\LogInView.xaml;Views\MenuGameView.xaml;Views\RegisterView.xaml;Views\UserProfileView.xaml;
 
 False
 

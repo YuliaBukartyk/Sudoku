@@ -11,7 +11,7 @@ namespace SudokuClient.Models
         private bool _endGame = false;
         private User _user;
 
-        public string Duraion
+        public string Duration
         {
             get
             {

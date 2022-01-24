@@ -20,19 +20,24 @@ namespace SudokuClient.Commands
 
         public override void Execute(object parameter)
         {
-            string success = "";
 
-            success = Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/verifyuser?name=" + _user.Name.ToString() + "&" + "password=" + _user.Password.ToString());
-
-            if (success.Equals("true"))
+            if (_user.Password == null || _user.Name == null)
             {
-                _navigationService.Navigate();
+                MessageBox.Show(Application.Current.MainWindow, "One of the credentials is empty, please try again", "Login Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
             }
             else
             {
-                MessageBox.Show(Application.Current.MainWindow, "One of the credentials is not correct, please try again", "Login Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
-            }
+                string success = Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/verifyuser?name=" + _user.Name.ToString() + "&" + "password=" + _user.Password.ToString());
 
+                if (success.Equals("true"))
+                {
+                    _navigationService.Navigate();
+                }
+                else
+                {
+                    MessageBox.Show(Application.Current.MainWindow, "One of the credentials is not correct, please try again", "Login Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
+                }
+            }
         }
     }
 }

@@ -85,8 +85,12 @@ namespace SudokuClient
 
         private UserProfileViewModel CreateUserProfileViewModel()
         {
-            return new UserProfileViewModel();
+            return new UserProfileViewModel(new NavigationService(navigationStore, CreateGamesHistoryViewModel));
         }
 
+        private GamesHistoryViewModel CreateGamesHistoryViewModel()
+        {
+            return new GamesHistoryViewModel();
+        }
     }
 }

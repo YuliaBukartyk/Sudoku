@@ -13,6 +13,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="jason.NetCore.OrderService.Grpc" Version="1.0.0" />
+    <PackageReference Include="Nancy" Version="2.0.0" />
+    <PackageReference Include="System.Text.Json" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Images\arrow-back-icon-9.jpg" />
     <Resource Include="Images\sudokuIcon.png" />
     <Resource Include="Images\sudokuLogo.PNG" />
