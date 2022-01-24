@@ -14,14 +14,14 @@ namespace SudokuServer.Controllers
     public class GameController : ControllerBase
     {
         [HttpGet("addgameinfo")]
-        public IEnumerable<Game> AddGameInfo(string duration, string level, User user)
+        public IEnumerable<Game> AddGameInfo(string duration, string level, string name)
         {
             using (var _context = new SudokuDBContext())
             {
                 Game game = new Game();
                 game.duration = duration;
                 game.level = level;
-                game.user = user;
+                game.name = name;
                 _context.Games.Add(game);
                 _context.SaveChanges();
 
