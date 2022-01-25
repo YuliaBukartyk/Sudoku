@@ -5,12 +5,16 @@ using System.Text;
 using Nancy.Json;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Windows.Input;
+using SudokuClient.Services;
+using SudokuClient.Commands;
 
 namespace SudokuClient.ViewModels
 {
     public class GamesHistoryViewModel : BaseViewModel
     {
         private List<PreviousGame> _previousGames;
+        public ICommand BackToMenuCommand { get; }
         public List<PreviousGame> PreviousGames
         {
             get
@@ -32,12 +36,11 @@ namespace SudokuClient.ViewModels
         }
 
 
-        public GamesHistoryViewModel()
+        public GamesHistoryViewModel(NavigationService MenuGameViewNavigationService, User user)
         {
-            //string levels = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Game/getgameshistorylevel?name=" + "yulia");
-            //string durations = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Game/getgameshistoryduration?name=" + "yulia");
+            BackToMenuCommand = new NavigateCommand(MenuGameViewNavigationService);
             PreviousGames = new List<PreviousGame>();
-            string jasonString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Game/getgameinfo?");
+            string jasonString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Game/getgameinfo?name=" + user.Name);
             JavaScriptSerializer javaScriptSerializer = new JavaScriptSerializer();
             PreviousGames = (List<PreviousGame>)javaScriptSerializer.Deserialize<List<PreviousGame>>(jasonString);
 

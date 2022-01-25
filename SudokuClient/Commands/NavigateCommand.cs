@@ -19,11 +19,8 @@ namespace SudokuClient.Commands
 
         public override void Execute(object parameter)
         {
-            //navigationStore.CurrentViewModel = new LogInViewModel();
-
             navigationService.Navigate();
-            
-
+          
         }
     }
 }

@@ -61,6 +61,7 @@ namespace SudokuClient.ViewModels
         public LevelsViewModel(NavigationService MenuViewNavigationService, Game game)
         {
             _game = game;
+            _game.EndGame = false;
             BackToMenuCommand = new NavigateCommand(MenuViewNavigationService);
             SaveTheGameCommand = new SaveTheGameCommand(_game);
             dispatcherTimer = new DispatcherTimer();
@@ -77,7 +78,7 @@ namespace SudokuClient.ViewModels
             CommandManager.InvalidateRequerySuggested();
             if (_game.EndGame)
             {
-                dispatcherTimer.Stop();
+                dispatcherTimer.Stop();            
             }
         }
 
