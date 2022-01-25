@@ -21,7 +21,7 @@ namespace SudokuClient.Commands
         public override void Execute(object parameter)
         {
 
-            if (_user.Password == null || _user.Name == null)
+            if (_user.Name == null || _user.Password == null)
             {
                 MessageBox.Show(Application.Current.MainWindow, "One of the credentials is empty, please try again", "Login Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
             }
