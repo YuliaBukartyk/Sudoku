@@ -31,9 +31,6 @@
     <Compile Update="Views\RegisterView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\UserProfileView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Components\BindablePasswordBox.xaml">
@@ -61,9 +58,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\RegisterView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\UserProfileView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

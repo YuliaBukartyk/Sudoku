@@ -20,5 +20,6 @@ namespace SudokuClient.Views
         {
             InitializeComponent();
         }
+
     }
 }

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:SudokuClient.Views" xmlns:viewmodels="clr-namespace:SudokuClient.ViewModels" 
+             xmlns:local="clr-namespace:SudokuClient.Views" xmlns:viewmodels="clr-namespace:SudokuClient.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:LevelsViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="450" Background="White">
     <UserControl.Resources>
@@ -65,7 +65,7 @@
 
     </UserControl.Resources>
 
-    <Grid Width="380" Margin="20,0,20,220" Height="380" VerticalAlignment="Bottom" >
+    <Grid Width="380" Margin="20,0,20,200" Height="380" VerticalAlignment="Bottom" >
 
 
         <Grid.ColumnDefinitions >
@@ -1483,31 +1483,32 @@
         <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="42,0,0,42" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Row="3" Grid.Column="5"/>
         <Border BorderBrush="#FF64CCF1" BorderThickness="3" Margin="42,1,0,41" Grid.RowSpan="4" Grid.ColumnSpan="4" Grid.Column="5"/>
 
-        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToMenuCommand}" Content="Back" Margin="13,-134,2,0" VerticalAlignment="Top" Height="37"
-            Background="#FF64CCF1"
+        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToMenuCommand}" Content="Back" Margin="-8,-176,23,0" VerticalAlignment="Top" Height="37"
+            Background="DarkTurquoise"
             Foreground="White"
             FontFamily="Arial"
             FontSize="20" RenderTransformOrigin="0.039,0.297" Grid.ColumnSpan="2"/>
 
-        <Label Content="{Binding Level}" HorizontalAlignment="Left" Margin="21,-157,0,166" Grid.Column="3" 
+        <Label Content="{Binding Level}" HorizontalAlignment="Left" Margin="27,-88,0,0" Grid.Column="3" 
                    FontFamily="Arial"
                    FontSize="20"
                    FontStretch="UltraExpanded"
                    Foreground="#FF64CCF1"
-                   FontWeight="Bold" Grid.ColumnSpan="5" Width="148"/>
+                   FontWeight="Bold" Width="169" VerticalAlignment="Top" Grid.ColumnSpan="5"/>
 
-        <Label Content="{Binding TimerText}" Margin="42,-116,1,111" Grid.Column="4" 
+        <Label Content="{Binding TimerText}" Margin="42,-174,1,0" Grid.Column="4" 
                 FontFamily="Arial"
                 FontSize="20"
                 FontStretch="UltraExpanded"
                 Foreground="#FF64CCF1"
-                FontWeight="Bold" Grid.ColumnSpan="5"/>
+                FontWeight="Bold" Grid.ColumnSpan="5" VerticalAlignment="Top" Height="37"/>
+        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding SaveTheGameCommand}" Content="Save" Margin="33,-176,24,0" VerticalAlignment="Top" Height="37"
+            Background="#FF64CCF1"
+            Foreground="White"
+            FontFamily="Arial"
+            FontSize="20" RenderTransformOrigin="0.039,0.297" Grid.ColumnSpan="3" Grid.Column="1"/>
 
-        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding SaveTheGameCommand}" Content="Save" Margin="13,-82,2,0" VerticalAlignment="Top" Height="37"
-                Background="#FF64CCF1"
-                Foreground="White"
-                FontFamily="Arial"
-                FontSize="20" RenderTransformOrigin="0.039,0.297" Grid.ColumnSpan="2"/>
+
 
     </Grid>
 </UserControl>

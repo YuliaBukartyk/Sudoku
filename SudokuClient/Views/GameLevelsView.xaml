@@ -64,9 +64,26 @@
         </Style>
     </UserControl.Resources>
     <Grid>
-        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding EasyLevelGameCommand}" Content="Easy" HorizontalAlignment="Center" Margin="0,211,0,0" VerticalAlignment="Top" Width="450" Height="30"/>
-        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding NormalLevelGameCommand}" Content="Normal" HorizontalAlignment="Center" VerticalAlignment="Top" Width="450" Height="30" Margin="0,324,0,0"/>
-        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding HardLevelGameCommand}" Content="Hard" HorizontalAlignment="Center" VerticalAlignment="Top" Width="450" Height="30" Margin="0,441,0,0"/>
-        <Button Content="Back" Style ="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToEntryCommand}" HorizontalAlignment="Left" Margin="28,22,0,0" VerticalAlignment="Top" Width="94" Height="27"/>
+        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding EasyLevelGameCommand}" Content="Easy" HorizontalAlignment="Center" Margin="0,211,0,0" VerticalAlignment="Top" Width="450" Height="30"
+                Background="#FF64CCF1"
+                Foreground="White"
+                FontFamily="Arial"
+                FontSize="20"/>
+        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding NormalLevelGameCommand}" Content="Normal" HorizontalAlignment="Center" VerticalAlignment="Top" Width="450" Height="30" Margin="0,324,0,0"
+                Background="#FF64CCF1"
+                Foreground="White"
+                FontFamily="Arial"
+                FontSize="20"/>
+        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding HardLevelGameCommand}" Content="Hard" HorizontalAlignment="Center" VerticalAlignment="Top" Width="450" Height="30" Margin="0,441,0,0"
+                Background="#FF64CCF1"
+                Foreground="White"
+                FontFamily="Arial"
+                FontSize="20"/>
+        <Button Content="Back" Style ="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToMenuCommand}" HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Height="37" Width="69"
+            Background="DarkTurquoise"
+            Foreground="White"
+            FontFamily="Arial"
+            FontSize="20"/>
+        
     </Grid>
 </UserControl>

@@ -16,11 +16,11 @@ namespace SudokuClient.ViewModels
 
         public ICommand HardLevelGameCommand { get; }
 
-        public ICommand BackToEntryCommand { get; }
+        public ICommand BackToMenuCommand { get; }
 
 
         public GameLevelsViewModel(NavigationService EasyLevelGameViewNavigationService, NavigationService NormalLevelGameViewNavigationService,
-                                    NavigationService HardLevelGameViewNavigationService, NavigationService EntryViewNavigationService)
+                                    NavigationService HardLevelGameViewNavigationService, NavigationService MenuGameViewNavigationService)
         {
 
             EasyLevelGameCommand = new NavigateCommand(EasyLevelGameViewNavigationService);
@@ -29,7 +29,7 @@ namespace SudokuClient.ViewModels
 
             HardLevelGameCommand = new NavigateCommand(HardLevelGameViewNavigationService);
 
-            BackToEntryCommand = new NavigateCommand(EntryViewNavigationService);
+            BackToMenuCommand = new NavigateCommand(MenuGameViewNavigationService);
 
         }
     }

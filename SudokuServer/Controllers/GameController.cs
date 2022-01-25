@@ -32,14 +32,14 @@ namespace SudokuServer.Controllers
         }
 
         [HttpGet("getgameinfo")]
-        public IEnumerable<Game> GetGameInfo()
+        public IEnumerable<Game> GetGameInfo(string name)
         {
             using (var _context = new SudokuDBContext())
             {
                 //return _context.Games.ToList();
 
                List<Game> GamesHistory = _context.Games
-                   .Where(g => g.name == "Yael")
+                   .Where(g => g.name == name)
                    .Select(group => new Game() 
                    {
                        duration = group.duration,
