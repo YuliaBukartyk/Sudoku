@@ -27,6 +27,7 @@ namespace SudokuServer
         {
             services.AddControllers();
             services.AddSingleton<ILoginService, LoginService>();
+            services.AddSingleton<IRegisterService, RegisterService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

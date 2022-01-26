@@ -7,36 +7,25 @@ using System.Windows;
 
 namespace SudokuClient.Commands
 {
-    public class LogedToGameCommand : CommandBase
+    public class LogedToGameCommand : CommandBase //using Command design pattern
     {
 
         private User _user;
         private NavigationService _navigationService;
+        private readonly LoginService _login;
+
         public LogedToGameCommand(User user, NavigationService MenuGameViewNavigationService)
         {
             _user = user;
             _navigationService = MenuGameViewNavigationService;
+            _login = new LoginService();
         }
 
         public override void Execute(object parameter)
         {
-
-            if (_user.Name == null || _user.Password == null)
+            if (_login.CanLogin(_user))
             {
-                MessageBox.Show(Application.Current.MainWindow, "One of the credentials is empty, please try again", "Login Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
-            }
-            else
-            {
-                string success = Utils.Utils.SendHttpGetRequest("http://localhost:5000/User/verifyuser?name=" + _user.Name.ToString() + "&" + "password=" + _user.Password.ToString());
-
-                if (success.Equals("true"))
-                {
-                    _navigationService.Navigate();
-                }
-                else
-                {
-                    MessageBox.Show(Application.Current.MainWindow, "One of the credentials is not correct, please try again", "Login Failure", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.Cancel);
-                }
+                _navigationService.Navigate();
             }
         }
     }

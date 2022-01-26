@@ -6,21 +6,21 @@ using System.Text;
 
 namespace SudokuServer.Services
 {
-    public class LoginService : ILoginService //using Facade design pattern
+    public class RegisterService : IRegisterService //using Facade design pattern
     {
         private readonly IValidationService _validationService;
-        public LoginService()
+        public RegisterService()
         {
-            _validationService = new ValidationLogInService();
+            _validationService = new ValidationRegisterService();
         }
 
-        public bool CanLogin(string userName, string password)
+        public bool CanRegister(string userName, string password)
         {
             if (_validationService.IsValidated(userName, password))
             {
                 return true;
             }
-            else 
+            else
             {
                 return false;
             }

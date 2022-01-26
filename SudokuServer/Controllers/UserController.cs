@@ -16,11 +16,15 @@ namespace SudokuServer.Controllers
     public class UserController : ControllerBase
     {
         private readonly ILoginService _login;
+        private readonly IRegisterService _register;
 
-        public UserController(ILoginService login)
+        public UserController(ILoginService login, IRegisterService register)
         {
             _login = login;
+            _register = register;
         }
+
+
         [HttpGet("adduser")]
         public IEnumerable<User> AddUser(string name, string password)
         {
@@ -54,34 +58,17 @@ namespace SudokuServer.Controllers
 
 
         [HttpGet("verifyuniqueusername")]
-        public string VerifyUniqueUsername(string name)
+        public string VerifyUniqueUsername(string name, string password)
         {
-
-           //using (SqlConnection con = new SqlConnection(@"Data Source=YROTBER-MOBL;Initial Catalog=SudokuDB;Integrated Security=True"))
-            using (SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True"))
+            if (_register.CanRegister(name, password))
             {
-                SqlCommand cmd = new SqlCommand("select * from Users where name = @name;");
-                cmd.Parameters.AddWithValue("@name", name);
-                cmd.Connection = con;
-                con.Open();
-
-                DataSet ds = new DataSet();
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(ds);
-                con.Close();
-
-                bool usernameExists = ((ds.Tables.Count > 0) && (ds.Tables[0].Rows.Count > 0));
-
-                if (usernameExists)
-                {
-                    return "UserName not available";
-                }
-                else
-                {
-                    return "successfully registered";
-
-                }
+                return "true";
             }
+            else
+            {
+                return "false";
+            }
+
         }
 
     }

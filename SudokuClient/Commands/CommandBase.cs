@@ -5,7 +5,7 @@ using System.Windows.Input;
 
 namespace SudokuClient.Commands
 {
-    public abstract class CommandBase : ICommand
+    public abstract class CommandBase : ICommand //using Command design pattern
     {
         public event EventHandler CanExecuteChanged;
 
