@@ -6,21 +6,33 @@ using System.Collections;
 
 public class BoardGenerator
 {
-	
-	public Cell[,] sudokuBoard { get; set; } // created a 2 dimension array to represent the sudoku board
+
+    public Cell[,] sudokuBoard { get; set; } // created a 2 dimension array to represent the sudoku board
     Random rand = new Random();
     private Board board;
     Random randomValue = new Random(); // range (1,10)	
-    string gameLevel = "";
-	
-	public BoardGenerator(string level)
-	{
+    //string gameLevel = "";
+    int gameLevel = 0;
+
+    
+    
+    
+    /*public BoardGenerator(string level)
+    {
         List<int> returnList = new List<int>();
         gameLevel = level;
         returnList = SudokuBoardGenerator(true);
 
-    }
+    }   */ 
     
+    public BoardGenerator(int cellsToHide)
+    {
+        List<int> returnList = new List<int>();
+        gameLevel = cellsToHide;
+        returnList = SudokuBoardGenerator(true);
+
+    }
+
     public List<int> SudokuBoardGenerator(bool fillBoard)
     {
         //Cell cell = new Cell();
@@ -275,7 +287,9 @@ public class BoardGenerator
         string playerString = "";
         List<char> playerList = new List<char>();
         List<int> indexesVisited = new List<int>();
+        cellsToHide = gameLevel;
 
+        /*
         if (gameLevel.Equals("easy"))
         {
             cellsToHide = 32;
@@ -288,8 +302,8 @@ public class BoardGenerator
         {
             cellsToHide = 50;
         }
+        */
 
-        
 
         for (int i = 0; i < 81; i++)
         {
@@ -301,9 +315,9 @@ public class BoardGenerator
 
         for (int i = 0; i < cellsToHide; i++)
         {
-            
+
             index = rand.Next(0, 81);
-            
+
             while (indexesVisited.Contains(index))
             {
                 index = rand.Next(0, 81);
@@ -340,6 +354,9 @@ public class BoardGenerator
                 board.sudokuString = board.sudokuString + sudokuBoard[i, j].Value.ToString();
             }
         }
+
+        //DifficultySudokuString();
+        //StrategyContext strategy = new StrategyContext(gameLevel);
         DifficultySudokuString();
 
         // enters to the DB the board created
@@ -354,13 +371,113 @@ public class BoardGenerator
 
     }
 
+    /*
+    interface LevelStrategy
+    {
+        string GameLevel { get; }
+        int DifficultyLevelCells();
+    }
+
+    class Easy : LevelStrategy
+    {
+        public string GameLevel => throw new NotImplementedException();
+
+        public int DifficultyLevelCells()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int EasyGame()
+        {
+            return 32;
+        }
+    }
+
+    class Normal : LevelStrategy
+    {
+        public string GameLevel => throw new NotImplementedException();
+
+        public int DifficultyLevelCells()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int NormalGame()
+        {
+            return 44;
+        }
+    }
+
+    class Hard : LevelStrategy
+    {
+        public string GameLevel => throw new NotImplementedException();
+
+        public int DifficultyLevelCells()
+        {
+            throw new NotImplementedException();
+        }
+
+        public int HardGame()
+        {
+            return 50;
+        }
+    }
+
+    class StrategyContext
+    {
+        //double price; // price for some item or air ticket etc.
+        int cellsToHide = 0;
+
+        public StrategyContext(string gameLevel)
+        {
+            this.cellsToHide = GetStrategy(gameLevel);
+        }
+
+        public int ApplyStrategy(string gameLevel)
+        {
+            /*
+            Currently applyStrategy has simple implementation. 
+            You can Context for populating some more information,
+            which is required to call a particular operation
+            
+            if (gameLevel.Equals("easy"))
+            {
+                return GetStrategy("easy");
+            }
+
+            return -1;
+
+        }
+
+        public int GetStrategy(string gameLevel)
+        {
+            /*
+            In absence of this Context method, client has to import 
+            relevant concrete Strategies everywhere.
+            Context acts as single point of contact for the Client 
+            to get relevant Strategy
+            
+            StrategyContext cellsToHide = new StrategyContext(gameLevel);
 
 
+            if (gameLevel.Equals("easy"))
+            {
+                return cellsToHide.ApplyStrategy("easy");
+            }
+            else if (gameLevel.Equals("normal"))
+            {
+                return cellsToHide.ApplyStrategy("normal");
+            }
+            else if (gameLevel.Equals("hard"))
+            {
+                return cellsToHide.ApplyStrategy("hard");
+            }
 
+            return -1;
+        } 
+    }
 
-
-
-
-
-
+    */
 }
+
+   

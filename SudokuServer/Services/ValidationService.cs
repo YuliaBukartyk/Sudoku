@@ -13,7 +13,8 @@ namespace SudokuServer.Services
     {
         public bool IsValidated(string userName, string password)
         {
-            using (SqlConnection con = new SqlConnection(@"Data Source=YROTBER-MOBL;Initial Catalog=SudokuDB;Integrated Security=True"))
+            //using (SqlConnection con = new SqlConnection(@"Data Source=YROTBER-MOBL;Initial Catalog=SudokuDB;Integrated Security=True"))
+            using (SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-N53TO97U;Initial Catalog=Sudoku;Integrated Security=True"))
             {
                 SqlCommand cmd = new SqlCommand("select * from Users where name = @name and password = @password;");
                 cmd.Parameters.AddWithValue("@name", userName);
