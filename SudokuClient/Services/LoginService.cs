@@ -1,10 +1,9 @@
-﻿using System;
+﻿using SudokuClient.Models;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
-
-namespace SudokuServer.Services
+namespace SudokuClient.Services
 {
     public class LoginService : ILoginService //using Facade design pattern
     {
@@ -14,16 +13,19 @@ namespace SudokuServer.Services
             _validationService = new ValidationLogInService();
         }
 
-        public bool CanLogin(string userName, string password)
+
+        public bool CanLogin(User user)
         {
-            if (_validationService.IsValidated(userName, password))
+            if (_validationService.IsNotEmpty(user))
             {
-                return true;
-            }
-            else 
-            {
+                if (_validationService.IsValidated(user))
+                {
+                    return true;
+                }
                 return false;
             }
+            return false;
+
         }
     }
 }

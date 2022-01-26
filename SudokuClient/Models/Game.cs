@@ -8,7 +8,7 @@ namespace SudokuClient.Models
     {
         private string _duration;
         private string _level;
-        private bool _endGame = false;
+        private bool _endGame;
         private User _user;
         private bool _isSuccess;
 

@@ -16,7 +16,7 @@ namespace SudokuClient.ViewModels
 
         public DispatcherTimer dispatcherTimer = null;
 
-        private string _timerText;
+        public string _timerText;
 
         public int _totalSeconds = 0;
 
@@ -26,9 +26,7 @@ namespace SudokuClient.ViewModels
 
         public Game _game;
 
-        private string _level;
-
-
+        public string _level;
         public Cell[] Cells { get; set; }
 
         public string TimerText
@@ -62,8 +60,9 @@ namespace SudokuClient.ViewModels
         {
             _game = game;
             _game.EndGame = false;
+            _game.IsSuccess = false;
             BackToMenuCommand = new NavigateCommand(MenuViewNavigationService);
-            SaveTheGameCommand = new SaveTheGameCommand(_game);
+            SaveTheGameCommand = new SaveTheGameCommand(_game, MenuViewNavigationService);
             dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += new EventHandler(DispatcherTimerTick);
             dispatcherTimer.Interval = new TimeSpan(0, 0, 1);

@@ -7,7 +7,7 @@ using System.Text;
 
 namespace SudokuClient.Commands
 {
-    class NavigateCommand : CommandBase
+    class NavigateCommand : CommandBase //using Command design pattern
     {
 
         private readonly NavigationService navigationService;
