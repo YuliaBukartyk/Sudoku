@@ -17,15 +17,19 @@ namespace SudokuServer.Controllers
     {
         [HttpGet("getsudokuboard")]
 
+        //public string GetSudokuBoard(string level)
         public string GetSudokuBoard(string level)
         {
             string returnString = "";
             List<Board> sudokuBoardList;
             int listSize = 0;
             List<int> sudokuList = new List<int>();
-            BoardGenerator sudokuBoard = new BoardGenerator(level);
-            //sudokuBoard.DifficultySudokuString(level);
-            
+
+            //new BoardGeneratorStrategy = new BoardGeneratorStrategy.Generate
+            //new BoardGeneratorStrategy(new EasyGame()).GenerateBoardWithLevel(level);
+            new BoardGeneratorStrategy(new ChooseGameLevel()).GenerateBoardWithLevel(level);
+            //BoardGenerator sudokuBoard = new BoardGenerator(level);
+
             using (var _context = new SudokuDBContext())
             {
                 sudokuBoardList = _context.Boards.ToList(); // has the contect of the table 
