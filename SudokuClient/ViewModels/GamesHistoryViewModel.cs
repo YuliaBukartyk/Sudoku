@@ -32,6 +32,7 @@ namespace SudokuClient.ViewModels
         {
             public string Duration { get; set; }
             public string Level { get; set; }
+            public string Result { get; set; }
 
         }
 

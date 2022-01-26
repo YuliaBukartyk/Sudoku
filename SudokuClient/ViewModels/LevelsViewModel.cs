@@ -78,8 +78,28 @@ namespace SudokuClient.ViewModels
             CommandManager.InvalidateRequerySuggested();
             if (_game.EndGame)
             {
-                dispatcherTimer.Stop();            
+                dispatcherTimer.Stop();
+                CheckIfSuccess();
             }
+        }
+
+        private bool CheckIfSuccess()
+        {
+            bool IsSuccess = true;
+
+            for (int i = 0; i < Cells.Length; i++)
+            {
+                if (Cells[i].IsValid == false)
+                {
+                    IsSuccess = false;
+                }
+                else
+                {
+                    IsSuccess = true;
+                }
+            }
+            _game.IsSuccess = IsSuccess;
+            return IsSuccess;
         }
 
         public void FillCellsBoard()
