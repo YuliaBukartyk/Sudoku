@@ -10,6 +10,7 @@ namespace SudokuClient.Models
         private string _level;
         private bool _endGame = false;
         private User _user;
+        private bool _isSuccess;
 
         public string Duration
         {
@@ -58,6 +59,19 @@ namespace SudokuClient.Models
                 this._user = value;
             }
         }
+
+        public bool IsSuccess
+        {
+            get
+            {
+                return this._isSuccess;
+            }
+            set
+            {
+                this._isSuccess = value;
+            }
+        }
+
 
 
     }

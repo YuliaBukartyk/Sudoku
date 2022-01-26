@@ -16,7 +16,7 @@ namespace SudokuServer.Controllers
     public class GameController : ControllerBase
     {
         [HttpGet("addgameinfo")]
-        public IEnumerable<Game> AddGameInfo(string duration, string level, string name)
+        public IEnumerable<Game> AddGameInfo(string duration, string level, string name, string result)
         {
             using (var _context = new SudokuDBContext())
             {
@@ -24,6 +24,7 @@ namespace SudokuServer.Controllers
                 game.duration = duration;
                 game.level = level;
                 game.name = name;
+                game.result = result;
                 _context.Games.Add(game);
                 _context.SaveChanges();
                 var x = _context.Games;
@@ -36,14 +37,13 @@ namespace SudokuServer.Controllers
         {
             using (var _context = new SudokuDBContext())
             {
-                //return _context.Games.ToList();
-
                List<Game> GamesHistory = _context.Games
                    .Where(g => g.name == name)
                    .Select(group => new Game() 
                    {
                        duration = group.duration,
                        level = group.level,
+                       result = group.result,
                    }).ToList();
 
                 return GamesHistory;

@@ -64,7 +64,7 @@
         </Style>
     </UserControl.Resources>
     <Grid>
-        <ListBox Margin ="64,89,64,89" ItemsSource="{Binding PreviousGames}" BorderThickness="0" >
+        <ListBox Margin ="18,89,24,89" ItemsSource="{Binding PreviousGames}" BorderThickness="0" >
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" >
@@ -73,9 +73,12 @@
                                    FontWeight="Bold" />
                         <TextBlock Text="{Binding Path=Level}" VerticalAlignment="Center" FontSize="12"
                                    FontFamily="Arial"/>
-                        <TextBlock Text="    " VerticalAlignment="Center"/>
+                        <TextBlock Text="   " VerticalAlignment="Center"/>
                         <TextBlock Text="Duration: " FontSize="15" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold"/>
                         <TextBlock Text="{Binding Path=Duration}" VerticalAlignment="Center" FontSize="12" FontFamily="Arial"/>
+                        <TextBlock Text="   " VerticalAlignment="Center"/>
+                        <TextBlock Text="Result: " FontSize="15" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Path=Result}" VerticalAlignment="Center" FontSize="12" FontFamily="Arial"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
