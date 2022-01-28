@@ -7,10 +7,10 @@ using System.Text;
 
 namespace SudokuClient.ViewModels
 {
-    public class HardLevelGameViewModel : LevelsViewModel
+    public class HardLevelViewModel : BaseLevelViewModel
     {
 
-        public HardLevelGameViewModel(NavigationService MenuViewNavigationService, Game game) : base(MenuViewNavigationService, game)
+        public HardLevelViewModel(NavigationService MenuViewNavigationService, Game game) : base(MenuViewNavigationService, game)
         {
             Level = "Hard";
             sudokuString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?level=" + "hard");

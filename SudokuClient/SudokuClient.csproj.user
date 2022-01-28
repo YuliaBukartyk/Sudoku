@@ -19,7 +19,7 @@
     <Compile Update="Views\EntryView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\GameLevelsView.xaml.cs">
+    <Compile Update="Views\LevelsSelectionView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\LogInView.xaml.cs">
@@ -48,7 +48,7 @@
     <Page Update="Views\EntryView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\GameLevelsView.xaml">
+    <Page Update="Views\LevelsSelectionView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\LogInView.xaml">

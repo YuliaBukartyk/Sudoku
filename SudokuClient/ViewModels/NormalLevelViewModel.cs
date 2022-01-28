@@ -6,9 +6,9 @@ using System.Text;
 
 namespace SudokuClient.ViewModels
 {
-    public class NormalLevelGameViewModel : LevelsViewModel
+    public class NormalLevelViewModel : BaseLevelViewModel
     {
-        public NormalLevelGameViewModel(NavigationService MenuViewNavigationService, Game game) : base(MenuViewNavigationService, game)
+        public NormalLevelViewModel(NavigationService MenuViewNavigationService, Game game) : base(MenuViewNavigationService, game)
         {
             Level = "Normal";
             sudokuString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?level=" + "normal");

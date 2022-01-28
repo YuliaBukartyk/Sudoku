@@ -57,25 +57,25 @@ namespace SudokuClient
             return new RegisterViewModel(new NavigationService(navigationStore, CreateEntryViewModel), new NavigationService(navigationStore, CreateLogInViewModel), user);
         }
 
-        private GameLevelsViewModel CreateGameLevelsViewModel()
+        private LevelsSelectionViewModel CreateGameLevelsViewModel()
         {
-            return new GameLevelsViewModel(new NavigationService(navigationStore, CreateEasyLevelGameViewModel), new NavigationService(navigationStore, CreateNormalLevelGameViewModel),
+            return new LevelsSelectionViewModel(new NavigationService(navigationStore, CreateEasyLevelGameViewModel), new NavigationService(navigationStore, CreateNormalLevelGameViewModel),
                 new NavigationService(navigationStore, CreateHardLevelGameViewModel), new NavigationService(navigationStore, CreateMenuGameViewModel));
         }
 
-        private EasyLevelGameViewModel CreateEasyLevelGameViewModel()
+        private EasyLevelViewModel CreateEasyLevelGameViewModel()
         {
-            return new EasyLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel), game);
+            return new EasyLevelViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel), game);
         }
 
-        private NormalLevelGameViewModel CreateNormalLevelGameViewModel()
+        private NormalLevelViewModel CreateNormalLevelGameViewModel()
         {
-            return new NormalLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel), game);
+            return new NormalLevelViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel), game);
         }
 
-        private HardLevelGameViewModel CreateHardLevelGameViewModel()
+        private HardLevelViewModel CreateHardLevelGameViewModel()
         {
-            return new HardLevelGameViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel), game);
+            return new HardLevelViewModel(new NavigationService(navigationStore, CreateMenuGameViewModel), game);
         }
 
         private MenuGameViewModel CreateMenuGameViewModel()

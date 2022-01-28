@@ -8,7 +8,7 @@ using System.Windows.Input;
 
 namespace SudokuClient.ViewModels
 {
-    public class GameLevelsViewModel : BaseViewModel
+    public class LevelsSelectionViewModel : BaseViewModel
     {
         public ICommand EasyLevelGameCommand { get; }
 
@@ -19,7 +19,7 @@ namespace SudokuClient.ViewModels
         public ICommand BackToMenuCommand { get; }
 
 
-        public GameLevelsViewModel(NavigationService EasyLevelGameViewNavigationService, NavigationService NormalLevelGameViewNavigationService,
+        public LevelsSelectionViewModel(NavigationService EasyLevelGameViewNavigationService, NavigationService NormalLevelGameViewNavigationService,
                                     NavigationService HardLevelGameViewNavigationService, NavigationService MenuGameViewNavigationService)
         {
 
