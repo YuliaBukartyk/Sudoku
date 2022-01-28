@@ -9,7 +9,7 @@ using System.Windows.Threading;
 
 namespace SudokuClient.ViewModels
 {
-    public class LevelsViewModel : BaseViewModel
+    public class BaseLevelViewModel : BaseViewModel
     {
         public ICommand BackToMenuCommand { get; }
         public ICommand SaveTheGameCommand { get; }
@@ -56,7 +56,7 @@ namespace SudokuClient.ViewModels
             }
         }
 
-        public LevelsViewModel(NavigationService MenuViewNavigationService, Game game)
+        public BaseLevelViewModel(NavigationService MenuViewNavigationService, Game game)
         {
             _game = game;
             _game.EndGame = false;

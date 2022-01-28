@@ -10,10 +10,10 @@ using System.Collections.ObjectModel;
 
 namespace SudokuClient.ViewModels
 {
-    public class EasyLevelGameViewModel : LevelsViewModel
+    public class EasyLevelViewModel : BaseLevelViewModel
     {
 
-        public EasyLevelGameViewModel(NavigationService MenuViewNavigationService, Game game) : base(MenuViewNavigationService, game)
+        public EasyLevelViewModel(NavigationService MenuViewNavigationService, Game game) : base(MenuViewNavigationService, game)
         {
             Level = "Easy";
             sudokuString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?level=" + "easy");
