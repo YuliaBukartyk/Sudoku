@@ -16,9 +16,9 @@ namespace SudokuClient.Views
     /// <summary>
     /// Interaction logic for GameLevelsView.xaml
     /// </summary>
-    public partial class GameLevelsView : UserControl
+    public partial class LevelsSelectionView : UserControl
     {
-        public GameLevelsView()
+        public LevelsSelectionView()
         {
             InitializeComponent();
         }

@@ -53,7 +53,7 @@ namespace SudokuClient.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SudokuClient;V1.0.0.0;component/views/menugameview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SudokuClient;component/views/menugameview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\MenuGameView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

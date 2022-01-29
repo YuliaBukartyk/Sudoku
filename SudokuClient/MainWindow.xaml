@@ -20,19 +20,20 @@
             <DataTemplate DataType="{x:Type vms:RegisterViewModel}">
                 <views:RegisterView />
             </DataTemplate>
-            <DataTemplate DataType="{x:Type vms:GameLevelsViewModel}">
-                <views:GameLevelsView />
+            
+            <DataTemplate DataType="{x:Type vms:LevelsSelectionViewModel}">
+                <views:LevelsSelectionView/>
             </DataTemplate>
 
-            <DataTemplate DataType="{x:Type vms:EasyLevelGameViewModel}">
+            <DataTemplate DataType="{x:Type vms:EasyLevelViewModel}">
                 <views:GameView />
             </DataTemplate>
 
-            <DataTemplate DataType="{x:Type vms:NormalLevelGameViewModel}">
+            <DataTemplate DataType="{x:Type vms:NormalLevelViewModel}">
                 <views:GameView />
             </DataTemplate>
 
-            <DataTemplate DataType="{x:Type vms:HardLevelGameViewModel}">
+            <DataTemplate DataType="{x:Type vms:HardLevelViewModel}">
                 <views:GameView />
             </DataTemplate>
             
