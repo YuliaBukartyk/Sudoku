@@ -1,4 +1,5 @@
-﻿using SudokuClient.Models;
+﻿using SudokuClient.Commands;
+using SudokuClient.Models;
 using SudokuClient.Services;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace SudokuClient.ViewModels
             sudokuString = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokuboard?level=" + "normal");
             sudokuStringPlayer = Utils.Utils.SendHttpGetRequest("http://localhost:5000/Board/getsudokustringplayer?");
             FillCellsBoard();
+            SaveTheGameCommand = new SaveTheGameCommand(_game, Cells, MenuViewNavigationService);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace SudokuClient.ViewModels
     public class BaseLevelViewModel : BaseViewModel
     {
         public ICommand BackToMenuCommand { get; }
-        public ICommand SaveTheGameCommand { get; }
+        public ICommand SaveTheGameCommand { get; set; }
 
         public DispatcherTimer dispatcherTimer = null;
 
@@ -62,7 +62,6 @@ namespace SudokuClient.ViewModels
             _game.EndGame = false;
             _game.IsSuccess = false;
             BackToMenuCommand = new NavigateCommand(MenuViewNavigationService);
-            SaveTheGameCommand = new SaveTheGameCommand(_game, MenuViewNavigationService);
             dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += new EventHandler(DispatcherTimerTick);
             dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
@@ -78,32 +77,12 @@ namespace SudokuClient.ViewModels
             if (_game.EndGame)
             {
                 dispatcherTimer.Stop();
-                CheckIfSuccess();
             }
         }
 
-        private bool CheckIfSuccess()
-        {
-            bool IsSuccess = true;
-
-            for (int i = 0; i < Cells.Length; i++)
-            {
-                if (Cells[i].IsValid == false)
-                {
-                    IsSuccess = false;
-                }
-                else
-                {
-                    IsSuccess = true;
-                }
-            }
-            _game.IsSuccess = IsSuccess;
-            return IsSuccess;
-        }
 
         public void FillCellsBoard()
         {
-
             Cells = new Cell[sudokuStringPlayer.Length];
 
 
@@ -115,14 +94,15 @@ namespace SudokuClient.ViewModels
                 if (sudokuStringPlayer[i] == '0')
                 {
                     Cells[i].CellValue = string.Empty;
+                    Cells[i].IsValid = false;
                 }
                 else
                 {
                     Cells[i].CellValue = sudokuStringPlayer[i].ToString();
+                    
                 }
 
             }
         }
-
     }
 }
