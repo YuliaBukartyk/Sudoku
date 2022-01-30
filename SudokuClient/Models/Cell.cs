@@ -27,8 +27,8 @@ namespace SudokuClient.Models
             set
             {
                 _cellValue = value;
-                
-                if (!CellValue.Equals(string.Empty) && !CellValue.Equals(OriginalValue))
+
+                if (!CellValue.Equals(OriginalValue))
                 {
                     IsValid = false;
                 }
