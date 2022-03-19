@@ -28,8 +28,6 @@ namespace SudokuServer
                 new BoardGeneratorStrategy(new HardGame()).GenerateBoardWithLevel(gameMode);
 
             }
-            //BoardGenerator easySudokuBoard = new BoardGenerator(gameMode);
-
         }
     }
 
@@ -90,10 +88,6 @@ namespace SudokuServer
             {
                 _strategy.GenerateBoardWithLevel(gameMode);
             }
-
-            //_strategy.GenerateBoardWithLevel(gameMode);
-            //sudokuStringLevelMode = result.ToString();
-            //return sudokuStringLevelMode;
         }
     }
 

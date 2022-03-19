@@ -25,7 +25,7 @@ namespace SudokuServer.Controllers
         }
 
 
-        [HttpGet("adduser")]
+        [HttpGet("adduser")] //when user register 
         public IEnumerable<User> AddUser(string name, string password)
         {
             
@@ -42,7 +42,7 @@ namespace SudokuServer.Controllers
             }
         }
 
-        [HttpGet("verifyuser")]
+        [HttpGet("verifyuser")] //when user login
         public string VerifyUser(string name, string password)
         {
 
@@ -57,7 +57,7 @@ namespace SudokuServer.Controllers
         }
 
 
-        [HttpGet("verifyuniqueusername")]
+        [HttpGet("verifyuniqueusername")] //when user register , checking if name already exist 
         public string VerifyUniqueUsername(string name, string password)
         {
             if (_register.CanRegister(name, password))

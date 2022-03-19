@@ -14,16 +14,7 @@ public class BoardGenerator
     //string gameLevel = "";
     int gameLevel = 0;
 
-    
-    
-    
-    /*public BoardGenerator(string level)
-    {
-        List<int> returnList = new List<int>();
-        gameLevel = level;
-        returnList = SudokuBoardGenerator(true);
 
-    }   */ 
     
     public BoardGenerator(int cellsToHide)
     {
@@ -35,7 +26,6 @@ public class BoardGenerator
 
     public List<int> SudokuBoardGenerator(bool fillBoard)
     {
-        //Cell cell = new Cell();
         board = new Board();
 
         List<int> returnList = new List<int>();
@@ -55,7 +45,6 @@ public class BoardGenerator
             if (solveSudoku())
             {
 
-                printBoard();
                 makeListOfValues();
 
             }
@@ -142,7 +131,7 @@ public class BoardGenerator
             if (checkIfValid(row, column, sudokuBoard[row, column].Index, valueToTry))
             {
                 sudokuBoard[row, column].Value = valueToTry;
-                //Console.WriteLine("im in cell " + row + " , " + column + "with the value " + valueToTry + "\n");
+                
 
                 if (solveSudoku())
                 {
@@ -151,7 +140,6 @@ public class BoardGenerator
                 else
                 {
                     sudokuBoard[row, column].Value = 0;
-                    //Console.WriteLine("im in cell " + row + " , " + column + "back to ZERO \n");
 
                 }
             }
@@ -212,11 +200,10 @@ public class BoardGenerator
         // it's safe, no conflicts on row, column or square
         return true;
 
-        //return (checkRow(row, valueToCheck) && checkColumn(column, valueToCheck) && checkUpdateSquare(indexCell, valueToCheck, false));
     }
 
 
-    public int calculateSquareIndex(int row, int column) //TODO check
+    public int calculateSquareIndex(int row, int column) 
     {
         if (row / 3 == 0 && column / 3 == 0)
             return 0;
@@ -240,19 +227,6 @@ public class BoardGenerator
             return -1; //error value
     }
 
-    public void printBoard()
-    {
-        for (int i = 0; i < 9; i++)
-        {
-            for (int j = 0; j < 9; j++)
-            {
-                Console.Write("( " + sudokuBoard[i, j].Value + " )");
-                if (j == 8)
-                    Console.WriteLine("\n");
-            }
-        }
-
-    }
 
 
     // function to initialize each cell with the relevant values for rows number, column, square and index. 
@@ -289,26 +263,10 @@ public class BoardGenerator
         List<int> indexesVisited = new List<int>();
         cellsToHide = gameLevel;
 
-        /*
-        if (gameLevel.Equals("easy"))
-        {
-            cellsToHide = 32;
-        }
-        else if (gameLevel.Equals("normal"))
-        {
-            cellsToHide = 44;
-        }
-        else if (gameLevel.Equals("hard"))
-        {
-            cellsToHide = 50;
-        }
-        */
 
 
         for (int i = 0; i < 81; i++)
         {
-            //index = rand.Next(0,81);
-            //playerString = board.sudokuString.Substring(0, 1);
             playerList.Add(board.sudokuString[i]); // get the i char of string
 
         }
@@ -335,9 +293,6 @@ public class BoardGenerator
         }
 
         playerString = playerString + "";
-        //board.sudokuStringPlayer = board.sudokuStringPlayer + playerString;
-        //playerString = array.ToString();
-        //return playerString;
 
     }
 
@@ -350,7 +305,6 @@ public class BoardGenerator
         {
             for (j = 0; j < 9; j++)
             {
-                //sudokuString = sudokuString + sudokuBoard[i, j].Value.ToString();
                 board.sudokuString = board.sudokuString + sudokuBoard[i, j].Value.ToString();
             }
         }
@@ -370,114 +324,6 @@ public class BoardGenerator
         }
 
     }
-
-    /*
-    interface LevelStrategy
-    {
-        string GameLevel { get; }
-        int DifficultyLevelCells();
-    }
-
-    class Easy : LevelStrategy
-    {
-        public string GameLevel => throw new NotImplementedException();
-
-        public int DifficultyLevelCells()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int EasyGame()
-        {
-            return 32;
-        }
-    }
-
-    class Normal : LevelStrategy
-    {
-        public string GameLevel => throw new NotImplementedException();
-
-        public int DifficultyLevelCells()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int NormalGame()
-        {
-            return 44;
-        }
-    }
-
-    class Hard : LevelStrategy
-    {
-        public string GameLevel => throw new NotImplementedException();
-
-        public int DifficultyLevelCells()
-        {
-            throw new NotImplementedException();
-        }
-
-        public int HardGame()
-        {
-            return 50;
-        }
-    }
-
-    class StrategyContext
-    {
-        //double price; // price for some item or air ticket etc.
-        int cellsToHide = 0;
-
-        public StrategyContext(string gameLevel)
-        {
-            this.cellsToHide = GetStrategy(gameLevel);
-        }
-
-        public int ApplyStrategy(string gameLevel)
-        {
-            /*
-            Currently applyStrategy has simple implementation. 
-            You can Context for populating some more information,
-            which is required to call a particular operation
-            
-            if (gameLevel.Equals("easy"))
-            {
-                return GetStrategy("easy");
-            }
-
-            return -1;
-
-        }
-
-        public int GetStrategy(string gameLevel)
-        {
-            /*
-            In absence of this Context method, client has to import 
-            relevant concrete Strategies everywhere.
-            Context acts as single point of contact for the Client 
-            to get relevant Strategy
-            
-            StrategyContext cellsToHide = new StrategyContext(gameLevel);
-
-
-            if (gameLevel.Equals("easy"))
-            {
-                return cellsToHide.ApplyStrategy("easy");
-            }
-            else if (gameLevel.Equals("normal"))
-            {
-                return cellsToHide.ApplyStrategy("normal");
-            }
-            else if (gameLevel.Equals("hard"))
-            {
-                return cellsToHide.ApplyStrategy("hard");
-            }
-
-            return -1;
-        } 
-    }
-
-    */
 }
 
    
