@@ -9,8 +9,6 @@ public class Cell
     public int Square { get; set; }
     public int Row { get; set; }
     public int Column { get; set; }
-    public List<int> AvailableValues { get; set; }
-    public int AvailableValuesCount { get; set; }
     public int Index { get; set; } // the index number from 1 to 81 of the cell 
 
 
@@ -26,37 +24,4 @@ public class Cell
         Filled = false;
     }
 
-
-
-    // reset a cell with default values 
-    public void reset()
-    {
-        Filled = false;
-        Value = 0;
-    }
-
-    public void setValue(int num)
-    {
-        this.Value = num;
-    }
-
-    public void setRow(int num)
-    {
-        this.Row = num;
-    }
-
-    public void setColumn(int num)
-    {
-        this.Column = num;
-    }
-
-    public void setSquare(int num)
-    {
-        this.Square = num;
-    }
-
-    public void setIndex(int num)
-    {
-        this.Index = num;
-    }
 }

@@ -17,7 +17,7 @@ namespace SudokuServer.Controllers
     {
         [HttpGet("getsudokuboard")]
 
-        //public string GetSudokuBoard(string level)
+
         public string GetSudokuBoard(string level)
         {
             string returnString = "";
@@ -25,18 +25,15 @@ namespace SudokuServer.Controllers
             int listSize = 0;
             List<int> sudokuList = new List<int>();
 
-            //new BoardGeneratorStrategy = new BoardGeneratorStrategy.Generate
-            //new BoardGeneratorStrategy(new EasyGame()).GenerateBoardWithLevel(level);
             new BoardGeneratorStrategy(new ChooseGameLevel()).GenerateBoardWithLevel(level);
-            //BoardGenerator sudokuBoard = new BoardGenerator(level);
+
 
             using (var _context = new SudokuDBContext())
             {
                 sudokuBoardList = _context.Boards.ToList(); // has the contect of the table 
                 listSize = sudokuBoardList.Count();
                 returnString = sudokuBoardList[listSize - 1].sudokuString;// now we have the last sodoku string created.
-                //returnStringPlayer = sudokuBoardList[listSize - 1].sudokuStringPlayer;
-                //returnString = sudokuBoardList[listSize - 1].sudokuStringPlayer;// now we have the last sodoku string created.
+
                 // make the string to be according to level
                 _context.SaveChanges();
             }
@@ -57,21 +54,9 @@ namespace SudokuServer.Controllers
                 sudokuBoardList = _context.Boards.ToList(); // has the contect of the table 
                 listSize = sudokuBoardList.Count();
                 returnStringPlayer = sudokuBoardList[listSize - 1].sudokuStringPlayer;
-                //_context.SaveChanges();
             }
             return returnStringPlayer;
         }
 
-
-
-
-
-        //public IEnumerable<Board> GetSudokuBoard(string level)
-        //{
-        //    if (level == "Easy")
-        //    {
-        //        
-        //    }
-        //}
     }
 }

@@ -15,7 +15,7 @@ namespace SudokuServer.Controllers
     [Route("[controller]")]
     public class GameController : ControllerBase
     {
-        [HttpGet("addgameinfo")]
+        [HttpGet("addgameinfo")] //when user save the game
         public IEnumerable<Game> AddGameInfo(string duration, string level, string name, string result)
         {
             using (var _context = new SudokuDBContext())
@@ -32,7 +32,7 @@ namespace SudokuServer.Controllers
             }
         }
 
-        [HttpGet("getgameinfo")]
+        [HttpGet("getgameinfo")] //when user wants to see the game history
         public IEnumerable<Game> GetGameInfo(string name)
         {
             using (var _context = new SudokuDBContext())

@@ -12,16 +12,9 @@ namespace SudokuServer.Models
         [Key]
         public int Id { get; set; }
 
-        //public List<int> sudokuValues;
-
         public string sudokuString { get; set; } // the sudoku string
 
         public string sudokuStringPlayer { get; set; } // with zeros to represent empty cells
-
-        // public string sudokuValuesPlayer;
-
-
-
 
     }
 }

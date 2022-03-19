@@ -23,7 +23,5 @@ namespace SudokuServer
                     webBuilder.UseStartup<Startup>();
                 });
 
-        
-
     }
 }

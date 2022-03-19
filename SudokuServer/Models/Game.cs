@@ -9,13 +9,12 @@ namespace SudokuServer.Models
 {
     public class Game 
     {
-            [Key]
-            public int Id { get; set; }
-            public string duration { get; set; }
-            public string level { get; set; }
+           [Key]
+           public int Id { get; set; }
+           public string duration { get; set; }
+           public string level { get; set; }
            public string result { get; set; }
            public string name { get; set; }
-
 
     }    
 }
