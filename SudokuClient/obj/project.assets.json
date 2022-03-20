@@ -6518,11 +6518,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yrotber\\OneDrive - Intel Corporation\\Documents\\Studies\\Sudoku\\Sudoku\\SudokuClient\\SudokuClient.csproj",
+      "projectUniqueName": "C:\\Users\\yrotber\\OneDrive - Intel Corporation\\Desktop\\sudoku\\SudokuClient\\SudokuClient.csproj",
       "projectName": "SudokuClient",
-      "projectPath": "C:\\Users\\yrotber\\OneDrive - Intel Corporation\\Documents\\Studies\\Sudoku\\Sudoku\\SudokuClient\\SudokuClient.csproj",
+      "projectPath": "C:\\Users\\yrotber\\OneDrive - Intel Corporation\\Desktop\\sudoku\\SudokuClient\\SudokuClient.csproj",
       "packagesPath": "C:\\Users\\yrotber\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yrotber\\OneDrive - Intel Corporation\\Documents\\Studies\\Sudoku\\Sudoku\\SudokuClient\\obj\\",
+      "outputPath": "C:\\Users\\yrotber\\OneDrive - Intel Corporation\\Desktop\\sudoku\\SudokuClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
