@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C6lWRhuSsOMJ+Dh2RinTOkNXHdbGVgId0tCXyknWeK0r46ZE2JyK8KGiM+NoIsUebwZhNY/XWLkULEMWxjOusQ==",
+  "dgSpecHash": "suvmT2gvBNraeecVmdYD1NRx9puGYASyN4w/znJxXV+drSWwBZHyKeM0LPw2g6VRaKEDrMTRTsDrO96Q84BzMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yrotber\\OneDrive - Intel Corporation\\Documents\\Studies\\Sudoku\\Sudoku\\SudokuClient\\SudokuClient.csproj",
+  "projectFilePath": "C:\\Users\\yrotber\\OneDrive - Intel Corporation\\Desktop\\sudoku\\SudokuClient\\SudokuClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yrotber\\.nuget\\packages\\consul\\0.7.2.6\\consul.0.7.2.6.nupkg.sha512",
     "C:\\Users\\yrotber\\.nuget\\packages\\google.protobuf\\3.8.0\\google.protobuf.3.8.0.nupkg.sha512",

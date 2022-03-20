@@ -11,13 +11,14 @@ namespace SudokuClient.ViewModels
     {
 
         public ICommand OpenGameLevelsViewCommand { get; }
-
         public ICommand ShowGamesHistoryViewCommand { get; }
+        public ICommand BackToEntryCommand { get; }
 
-        public MenuGameViewModel(NavigationService GameLevelsViewNavigationService, NavigationService GamesHistoryViewNavigationService)
+        public MenuGameViewModel(NavigationService GameLevelsViewNavigationService, NavigationService GamesHistoryViewNavigationService, NavigationService EntryViewNavigationService)
         {
             OpenGameLevelsViewCommand = new NavigateCommand(GameLevelsViewNavigationService);
             ShowGamesHistoryViewCommand = new NavigateCommand(GamesHistoryViewNavigationService);
+            BackToEntryCommand = new NavigateCommand(EntryViewNavigationService);
         }
     }
 }

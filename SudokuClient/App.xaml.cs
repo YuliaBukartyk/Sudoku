@@ -80,7 +80,7 @@ namespace SudokuClient
 
         private MenuGameViewModel CreateMenuGameViewModel()
         {
-            return new MenuGameViewModel(new NavigationService(navigationStore, CreateGameLevelsViewModel), new NavigationService(navigationStore, CreateGamesHistoryViewModel));
+            return new MenuGameViewModel(new NavigationService(navigationStore, CreateGameLevelsViewModel), new NavigationService(navigationStore, CreateGamesHistoryViewModel), new NavigationService(navigationStore, CreateEntryViewModel));
         }
 
         private GamesHistoryViewModel CreateGamesHistoryViewModel()

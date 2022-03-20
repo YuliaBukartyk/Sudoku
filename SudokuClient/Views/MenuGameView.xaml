@@ -74,5 +74,11 @@
                 Foreground="White"
                 FontFamily="Arial"
                 FontSize="20"/>
+
+        <Button Style="{DynamicResource RoundedButtonStyle}" Command="{Binding BackToEntryCommand}" Content="Back" HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Height="37" Width="69"
+            Background="DarkTurquoise"
+            Foreground="White"
+            FontFamily="Arial"
+            FontSize="20"/>
     </Grid>
 </UserControl>
